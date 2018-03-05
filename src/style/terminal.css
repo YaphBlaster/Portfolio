@@ -1,5 +1,4 @@
 .terminal {
-  width: 750px;
   border-radius: 25px;
   margin: 0 auto;
   margin-top: 50px;
@@ -20,9 +19,9 @@
   width: 15px;
   height: 15px;
   margin: 0 auto;
-  left: -47%;
-  bottom: -20%;
-  position: relative;
+  margin-left: 15px;
+  margin-top: 5px;
+  position: absolute;
 }
 #yellow {
   background-color: #f0f000;
@@ -30,9 +29,9 @@
   width: 15px;
   height: 15px;
   margin: 0 auto;
-  left: -44%;
-  bottom: 40%;
-  position: relative;
+  margin-left: 35px;
+  margin-top: 5px;
+  position: absolute;
   display: block;
 }
 #green {
@@ -41,9 +40,9 @@
   width: 15px;
   height: 15px;
   margin: 0 auto;
-  left: -41%;
-  bottom: 99%;
-  position: relative;
+  margin-left: 55px;
+  margin-top: 5px;
+  position: absolute;
   display: block;
 }
 #bar {
@@ -79,6 +78,12 @@ div.cursor:after {
   opacity: 0;
   display: inline-block;
   animation: blink 0.55s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate;
+}
+
+@media only screen and (max-width: 768px) {
+  #screen {
+    height: 500px;
+  }
 }
 
 @keyframes blink {

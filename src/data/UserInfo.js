@@ -40,11 +40,14 @@ const about = [
   }
 ];
 
+const links = about[0].info;
+
 const Data = {
   firstName,
   lastName,
   summary,
-  about
+  about,
+  links
 };
 
 export default Data;

@@ -3,7 +3,8 @@
   max-width: 800px;
   margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+  padding: 20px;
   font-family: "Roboto", sans-serif;
 }
 .App-logo {
@@ -30,9 +31,38 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  max-width: 400px;
   margin: 0 auto;
+  width: 300px;
+  grid-template-columns: repeat(3, 1fr);
   padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.navbar a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: cornflowerblue;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* Name Component */
@@ -41,6 +71,7 @@
   width: 85%;
   margin-top: 10vh;
   text-align: left;
+  transition: all 0.5s ease;
 }
 
 /* Summary Component */
@@ -49,15 +80,18 @@
   text-align: justify;
   margin-top: 50px;
   font-weight: 300;
+  transition: all 0.5s ease;
+  font-size: 1.3em;
 }
 
-/* About */
+/* About Component*/
 .about {
   color: #fff;
   font-family: monospace;
   font-size: 15px;
   text-align: left;
   position: static;
+  transition: all 0.5s ease;
 }
 
 .category {
@@ -77,11 +111,90 @@
   background-color: blueviolet;
 }
 
+/* Contact Component */
+.contact {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+
+.contact-link-container {
+  display: grid;
+  margin: 0 auto;
+  /* width: 600px; */
+  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.contact-link {
+  align-self: center;
+}
+
+.contact-link > a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-link a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-link a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: cornflowerblue;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.contact-link a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* .contact-link-container div:nth-child(3):after {
+  content: "";
+}
+
+.contact-link-container div:after {
+  content: "||";
+  color: black;
+  margin: 0 30px;
+} */
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    font-size: 1.5em;
+  }
+  .name {
+    font-size: 2.5em;
+  }
+  .summary {
+    font-size: 1.3em;
+  }
+  .about {
+    font-size: 1.7em;
+  }
+  .contact {
+    font-size: 1.5em;
   }
 }

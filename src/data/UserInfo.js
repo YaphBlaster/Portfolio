@@ -44,11 +44,23 @@ const about = [
 
 const links = about[0].info;
 
+const projects = [
+  {
+    title: "WowVr",
+    description:
+      "A mobile application leveraging GoogleVr to explore a virtual patio",
+    techStack: ["C#", "Unity", "GoogleVr"],
+    github: null,
+    demo: "https://goo.gl/Bi6SAZ"
+  }
+];
+
 const Data = {
   firstName,
   lastName,
   summary,
   about,
+  projects,
   links
 };
 

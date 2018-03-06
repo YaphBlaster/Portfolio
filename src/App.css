@@ -113,6 +113,10 @@
   background-color: blueviolet;
 }
 
+/* ProjectItem Component */
+.project-item {
+}
+
 /* Contact Component */
 .contact {
   margin-top: 100px;
@@ -163,16 +167,6 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
-/* .contact-link-container div:nth-child(3):after {
-  content: "";
-}
-
-.contact-link-container div:after {
-  content: "||";
-  color: black;
-  margin: 0 30px;
-} */
 
 @keyframes App-logo-spin {
   from {

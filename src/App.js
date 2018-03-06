@@ -8,6 +8,7 @@ import Summary from "./components/Summary";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
+import ProjectItems from "./components/ProjectItems";
 
 class App extends Component {
   render() {
@@ -25,6 +26,9 @@ class App extends Component {
           </div>
           <div>
             <About prefix={Data.firstName} about={Data.about} />
+          </div>
+          <div>
+            <ProjectItems projects={Data.projects} />
           </div>
           <div>
             <Contact id="contact" links={Data.links} />

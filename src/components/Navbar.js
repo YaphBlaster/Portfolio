@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar transition">
       <a
-        href="#"
+        href="/#"
         onClick={() => animateScrollTo(document.querySelector(".home"))}
       >
         Home

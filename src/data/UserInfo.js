@@ -1,3 +1,4 @@
+import resume from "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 // const summary =
@@ -7,7 +8,6 @@ const summary =
 const emailAddress = "yaphet.abraha@gmail.com";
 const linkedIn = "https://www.linkedin.com/in/yaphet-abraha-95193490/";
 const github = "https://github.com/YaphBlaster";
-const resume = "./resume.pdf";
 const skillsList = [
   "ReactJS",
   "Javascript",

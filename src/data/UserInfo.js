@@ -52,6 +52,13 @@ const projects = [
     techStack: ["C#", "Unity", "GoogleVr"],
     github: null,
     demo: "https://goo.gl/Bi6SAZ"
+  },
+  {
+    title: "Prequel Memes",
+    description: "A sideproject made to create images for social media",
+    techStack: ["ReactJS", "Javascript", "HTML5", "CSS3"],
+    github: null,
+    demo: "www.prequelmemes.com"
   }
 ];
 

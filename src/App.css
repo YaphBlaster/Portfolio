@@ -27,6 +27,11 @@
   font-size: large;
 }
 
+/* All components */
+.transition {
+  transition: all 0.5s ease;
+}
+
 /* Navbar Component */
 .navbar {
   display: flex;
@@ -35,7 +40,6 @@
   width: 300px;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
-  transition: all 0.5s ease;
 }
 
 .navbar a {
@@ -71,7 +75,6 @@
   width: 85%;
   margin-top: 10vh;
   text-align: left;
-  transition: all 0.5s ease;
 }
 
 /* Summary Component */
@@ -80,7 +83,7 @@
   text-align: justify;
   margin-top: 50px;
   font-weight: 300;
-  transition: all 0.5s ease;
+
   font-size: 1.3em;
 }
 
@@ -91,7 +94,6 @@
   font-size: 15px;
   text-align: left;
   position: static;
-  transition: all 0.5s ease;
 }
 
 .category {
@@ -115,7 +117,6 @@
 .contact {
   margin-top: 100px;
   margin-bottom: 20px;
-  transition: all 0.5s ease;
 }
 
 .contact-link-container {

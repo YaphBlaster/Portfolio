@@ -3,7 +3,7 @@ import animateScrollTo from "animated-scroll-to";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar transition">
       <a
         href="#"
         onClick={() => animateScrollTo(document.querySelector(".home"))}

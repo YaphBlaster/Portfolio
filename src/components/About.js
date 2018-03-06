@@ -34,7 +34,7 @@ const About = props => {
     );
   });
   return (
-    <div className="terminal">
+    <div className="terminal transition">
       <div id="bar">
         <div id="red" />
         <div id="yellow" />

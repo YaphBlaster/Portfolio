@@ -82,7 +82,7 @@ div.cursor:after {
 
 @media only screen and (max-width: 768px) {
   #screen {
-    height: 500px;
+    height: 430px;
   }
 }
 

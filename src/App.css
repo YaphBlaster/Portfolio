@@ -3,7 +3,7 @@
   max-width: 800px;
   margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   padding: 20px;
   font-family: "Roboto", sans-serif;
 }
@@ -124,6 +124,7 @@
   /* width: 600px; */
   margin-top: 50px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  line-height: 80px;
 }
 
 .contact-link {
@@ -192,7 +193,7 @@
     font-size: 1.3em;
   }
   .about {
-    font-size: 1.7em;
+    font-size: 1.3em;
   }
   .contact {
     font-size: 1.5em;

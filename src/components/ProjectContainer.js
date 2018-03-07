@@ -1,12 +1,18 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import PropTypes from "prop-types";
+import { Card } from "semantic-ui-react";
 
 const ProjectContainer = props => {
+  const sortedArray = props.projects.sort(function(a, b) {
+    return b.year - a.year;
+  });
+  console.log(sortedArray);
   return (
-    <div>
-      Projects
-      <div className="project-container">
+    <div className="projects center">
+      <p className="projects-text">Projects</p>
+
+      <Card.Group className="project-container">
         {props.projects.map((project, index) => {
           return (
             <ProjectItem
@@ -15,15 +21,18 @@ const ProjectContainer = props => {
               techStack={project.techStack}
               github={project.github}
               demo={project.demo}
+              year={project.year}
+              image={project.image}
+              key={index}
             />
           );
         })}
-      </div>
+      </Card.Group>
     </div>
   );
 };
 
-ProjectItem.propTypes = {
+ProjectContainer.propTypes = {
   projects: PropTypes.array.isRequired
 };
 

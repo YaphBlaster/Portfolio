@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -113,14 +113,54 @@
   background-color: blueviolet;
 }
 
+.projects-text {
+  margin-bottom: 50px;
+}
+
 /* ProjectContainer Component */
 .project-container {
-  display: grid;
+  justify-content: center;
 }
 
 /* ProjectItem Component */
+
 .project-item {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: row !important;
+}
+
+.project-image {
+  height: 300px;
+  border-radius: 0 10px 10px 0;
+}
+
+.spacer {
+  height: 0;
+  flex: 0 1 200px;
+  margin: 0 20px;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.project-tech-stack {
+  display: flex;
+  padding: 20px !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row !important;
+}
+
+.tech {
+  border: 2px solid teal;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-basis: 20%;
 }
 
 /* Contact Component */
@@ -198,5 +238,11 @@
   }
   .contact {
     font-size: 1.5em;
+  }
+  .project-image {
+    display: none !important;
+  }
+  .spacer {
+    display: none !important;
   }
 }

@@ -18,7 +18,7 @@ const Contact = props => {
   });
   return (
     <div className="contact transition">
-      <div>Contact Me!</div>
+      <div>Contact Me</div>
       <div className="contact-link-container">{links}</div>
     </div>
   );

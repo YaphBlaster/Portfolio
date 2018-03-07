@@ -85,11 +85,21 @@ const projects = [
     title: "Canada’s Dream Garage Builder",
     description:
       "Developed in Unity, this app allows a user to create their own virtual garage in a Canadian Tire store using a 85 inch 4K touch screen TV and a Oculus Rift. Users create their garage in a controlled first person experience that allows you to move products around, then can explore their space by moving around using the touch screen, or putting on the Oculus Rift to see it in Virtual Reality.",
-    techStack: ["C#", "Unity", "GoogleVr"],
+    techStack: ["C#", "Unity"],
     github: null,
     demo: null,
     year: 2015,
     image: garageBuilder
+  },
+  {
+    title: "Canada’s Dream Patio Builder",
+    description:
+      "Located in the Edmonton Canadian Tire flagship store, and developed in Unity, this is an app that connects an 85 inch 4K touch screen with an Oculus Rift to create an awesome patio creation experience. Users can create a patio through a top down builder on the touch screen and switch to first person explore mode and examine their creation. Share mode allows them to either share their creation there friends, or email themselves a shopping list that contains all of the items right down to the isle the item can be found in.",
+    techStack: ["C#", "Unity"],
+    github: null,
+    demo: null,
+    year: 2016,
+    image: patioBuilder
   }
 ];
 

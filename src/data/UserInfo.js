@@ -1,4 +1,5 @@
 import resume from "./resume.pdf";
+const resumeLink = "https://goo.gl/Pz49Z9";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 // const summary =
@@ -30,7 +31,7 @@ const about = [
   },
   {
     category: "resume",
-    info: `<a href="${resume}" target="_blank">resume.pdf</a>`
+    info: `<a href="${resumeLink}" target="_blank">resume.pdf</a>`
   },
   {
     category: "education",

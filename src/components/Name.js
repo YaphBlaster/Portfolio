@@ -1,8 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import avatar from "../assets/avatar.svg";
 
 const Name = props => {
-  return <div className="name transition">{props.name}</div>;
+  return (
+    <div>
+      <img className="avatar transition" src={avatar} alt="" />
+      <div className="name transition">{props.name}</div>
+    </div>
+  );
 };
 
 Name.propTypes = {

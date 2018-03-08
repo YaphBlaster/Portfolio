@@ -55,6 +55,13 @@
   width: 85%;
   margin-top: 10vh;
   text-align: left;
+  display: inline-block;
+}
+
+.avatar {
+  top: 20px;
+  left: -40px;
+  position: relative;
 }
 
 /* Summary Component */
@@ -99,7 +106,6 @@
   margin-bottom: 50px;
   font-size: 1.6em;
 }
-
 /* ProjectContainer Component */
 .project-container {
   display: flex;
@@ -260,7 +266,13 @@
     font-size: 1.5em;
   }
   .name {
+    display: block;
+
     font-size: 2.5em;
+  }
+  .avatar {
+    top: 0;
+    left: 0;
   }
   .summary {
     font-size: 1.3em;

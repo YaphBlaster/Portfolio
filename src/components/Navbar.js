@@ -11,10 +11,10 @@ const Navbar = () => {
       <a href="/#" onClick={() => scrollTo(".home")}>
         Home
       </a>
-      <a href="#portfolio" onClick={() => scrollTo(".projects")}>
+      <a href="/#" onClick={() => scrollTo(".projects")}>
         Portfolio
       </a>
-      <a href="#contact" onClick={() => scrollTo(".contact")}>
+      <a href="/#" onClick={() => scrollTo(".contact")}>
         Contact
       </a>
     </nav>

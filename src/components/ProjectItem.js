@@ -1,42 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Card, Image } from "semantic-ui-react";
 
 const ProjectItem = props => {
   return (
-    <Card color="teal" fluid>
-      <div className="project-item">
-        <Image src={props.image} className="project-image" />
-        <div className="spacer" />
-        <div>
-          <Card.Content>
-            <Card.Header className="project-title">{props.title}</Card.Header>
-          </Card.Content>
-          <Card.Content className="project-description">
-            <Card.Description>{props.description}</Card.Description>
-          </Card.Content>
-          <Card.Description className="project-links">
-            <a href="" className="project-git">
-              {props.github}
-            </a>
-            <a href={props.demo} className="project-demo">
-              Explore
-            </a>
-          </Card.Description>
-
-          <Card.Content extra className="project-tech-stack">
-            {props.techStack.map((tech, index) => {
-              return (
-                <span key={index} className="tech">
-                  {tech}
-                </span>
-              );
-            })}
-          </Card.Content>
+    <div className="project-item ">
+      <img src={props.image} className="project-image" alt="" />
+      <div className="spacer" />
+      <div>
+        <div className="project-title ">{props.title}</div>
+        <div className="project-description">{props.description}</div>
+        <div className="project-links">
+          <a href="" className="project-git">
+            {props.github}
+          </a>
+          <a href={props.demo} className="project-demo">
+            Explore
+          </a>
         </div>
-        <div className="spacer" />
+
+        <div className="project-tech-stack">
+          {props.techStack.map((tech, index) => {
+            return (
+              <span key={index} className="tech">
+                {tech}
+              </span>
+            );
+          })}
+        </div>
       </div>
-    </Card>
+      <div className="spacer" />
+    </div>
   );
 };
 

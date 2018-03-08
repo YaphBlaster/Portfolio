@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import PropTypes from "prop-types";
-import { Card } from "semantic-ui-react";
+import Anime from "react-anime";
 
 const ProjectContainer = props => {
   const sortedArray = props.projects.sort(function(a, b) {
@@ -12,7 +12,7 @@ const ProjectContainer = props => {
     <div className="projects center">
       <p className="projects-text">Projects</p>
 
-      <Card.Group className="project-container">
+      <div className="project-container">
         {props.projects.map((project, index) => {
           return (
             <ProjectItem
@@ -27,7 +27,7 @@ const ProjectContainer = props => {
             />
           );
         })}
-      </Card.Group>
+      </div>
     </div>
   );
 };

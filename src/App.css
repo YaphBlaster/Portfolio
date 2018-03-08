@@ -120,7 +120,8 @@
 
 /* ProjectContainer Component */
 .project-container {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ProjectItem Component */
@@ -128,17 +129,21 @@
 .project-item {
   display: flex;
   flex-direction: row !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  border-radius: 15px;
 }
 
 .project-image {
   height: 300px;
   width: 300px;
+  border-radius: 15px;
 }
 
 .spacer {
   height: 0;
-  flex: 0 1 200px;
-  margin: 0 20px;
+  flex: 0 1 100px;
+  margin: 0 10px;
 }
 
 .project-links {
@@ -148,33 +153,34 @@
 .project-title {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 1.5em;
 }
 
 .project-text {
   display: flex;
-  flex-direction: column !important;
+  flex-direction: column;
 }
 
 .project-description {
   text-align: justify;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 .project-tech-stack {
   display: flex;
-  padding: 20px !important;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row !important;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 .tech {
   border: 2px solid teal;
   border-radius: 5px;
   padding: 10px;
-  width: 200px;
   margin-bottom: 20px;
   margin-left: 20px;
-  flex-basis: 20%;
 }
 
 /* Contact Component */
@@ -190,7 +196,6 @@
 .contact-link-container {
   display: grid;
   margin: 0 auto;
-  /* width: 600px; */
   margin-top: 50px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   line-height: 80px;

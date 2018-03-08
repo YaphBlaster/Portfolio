@@ -54,7 +54,7 @@ const projects = [
   {
     title: "WowVr",
     description:
-      "Developed in Unity, this app allows users to create their dream patio on their mobile iOS or Android device and look around there patio using GoogleVR. Users place their products from a bird's eye view, and set up the patio just the way they want, and then they can go to explore view or VR view to look around the patio in a first person perspective. Both modes will use VR to allow you to look around, but GoogleVR allows you to place it in a Cardboard device to actually get the full experience.",
+      "Developed in Unity, this app allows users to create their dream patio on their mobile iOS or Android device and look around there patio using GoogleVR. Users place their products from a bird's eye view, and set up the patio just the way they want, and then they can go to explore view or VR view to look around the patio in a first person perspective.",
     techStack: ["C#", "Unity", "GoogleVr"],
     github: null,
     demo: "https://goo.gl/Bi6SAZ",
@@ -65,7 +65,7 @@ const projects = [
     title: "Prequel Memes",
     description:
       "A web application developed in React. This application was made to streamline the process of creating images for social media. The user can choose a character and will be given multiple screenshots that are pulled from a server where that character is featured. The user can then choose to add text and then finally create an image with their text implanted onto it.",
-    techStack: ["ReactJS", "Javascript", "HTML5", "CSS3"],
+    techStack: ["ReactJS", "Javascript"],
     github: null,
     demo: "http://www.prequelmemes.com",
     year: 2018,
@@ -84,7 +84,7 @@ const projects = [
   {
     title: "Canada’s Dream Garage Builder",
     description:
-      "Developed in Unity, this app allows a user to create their own virtual garage in a Canadian Tire store using a 85 inch 4K touch screen TV and a Oculus Rift. Users create their garage in a controlled first person experience that allows you to move products around, then can explore their space by moving around using the touch screen, or putting on the Oculus Rift to see it in Virtual Reality.",
+      "Developed in Unity, this app allows a users to create their garage in a controlled first person experience that allows you to move products around. Users can then can explore their space by moving around using the touch screen, or putting on the Oculus Rift to see it in Virtual Reality.",
     techStack: ["C#", "Unity"],
     github: null,
     demo: null,
@@ -94,7 +94,7 @@ const projects = [
   {
     title: "Canada’s Dream Patio Builder",
     description:
-      "Located in the Edmonton Canadian Tire flagship store, and developed in Unity, this is an app that connects an 85 inch 4K touch screen with an Oculus Rift to create an awesome patio creation experience. Users can create a patio through a top down builder on the touch screen and switch to first person explore mode and examine their creation. Share mode allows them to either share their creation there friends, or email themselves a shopping list that contains all of the items right down to the isle the item can be found in.",
+      "Developed in Unity, this application lets users create a patio through a top down builder on the touch screen and switch to first person explore mode and examine their creation. Users can then can explore their space by moving around using the touch screen, or putting on the Oculus Rift to see it in Virtual Reality.",
     techStack: ["C#", "Unity"],
     github: null,
     demo: null,

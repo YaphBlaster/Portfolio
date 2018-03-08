@@ -86,7 +86,7 @@ const projects = [
     title: "Canada’s Dream Garage Builder",
     description:
       "Developed in Unity, this app allows a users to create their garage in a controlled first person experience that allows you to move products around. Users can then can explore their space by moving around using the touch screen, or putting on the Oculus Rift to see it in Virtual Reality.",
-    techStack: ["C#", "Unity"],
+    techStack: ["C#", "Unity", "Oculus"],
     github: null,
     demo: null,
     year: 2015,
@@ -96,7 +96,7 @@ const projects = [
     title: "Canada’s Dream Patio Builder",
     description:
       "Developed in Unity, this application lets users create a patio through a top down builder on the touch screen and switch to first person explore mode and examine their creation. Users can then can explore their space by moving around using the touch screen, or putting on the Oculus Rift to see it in Virtual Reality.",
-    techStack: ["C#", "Unity"],
+    techStack: ["C#", "Unity", "Oculus"],
     github: null,
     demo: null,
     year: 2016,

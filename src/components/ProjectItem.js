@@ -10,9 +10,9 @@ const ProjectItem = props => {
         <div className="spacer" />
         <div>
           <Card.Content>
-            <Card.Header>{props.title}</Card.Header>
+            <Card.Header className="project-title">{props.title}</Card.Header>
           </Card.Content>
-          <Card.Content>
+          <Card.Content className="project-description">
             <Card.Description>{props.description}</Card.Description>
           </Card.Content>
           <Card.Description className="project-links">
@@ -20,9 +20,10 @@ const ProjectItem = props => {
               {props.github}
             </a>
             <a href={props.demo} className="project-demo">
-              {props.demo}
+              Explore
             </a>
           </Card.Description>
+
           <Card.Content extra className="project-tech-stack">
             {props.techStack.map((tech, index) => {
               return (
@@ -33,6 +34,7 @@ const ProjectItem = props => {
             })}
           </Card.Content>
         </div>
+        <div className="spacer" />
       </div>
     </Card>
   );

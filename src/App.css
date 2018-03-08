@@ -115,6 +115,7 @@
 
 .projects-text {
   margin-bottom: 50px;
+  font-size: 1.6em;
 }
 
 /* ProjectContainer Component */
@@ -131,7 +132,7 @@
 
 .project-image {
   height: 300px;
-  border-radius: 0 10px 10px 0;
+  width: 300px;
 }
 
 .spacer {
@@ -140,9 +141,22 @@
   margin: 0 20px;
 }
 
+.project-links {
+  margin-top: 20px;
+}
+
+.project-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .project-text {
   display: flex;
   flex-direction: column !important;
+}
+
+.project-description {
+  text-align: justify;
 }
 
 .project-tech-stack {
@@ -167,6 +181,10 @@
 .contact {
   margin-top: 100px;
   margin-bottom: 20px;
+}
+
+.contact-me {
+  font-size: 1.6em;
 }
 
 .contact-link-container {
@@ -240,9 +258,6 @@
     font-size: 1.5em;
   }
   .project-image {
-    display: none !important;
-  }
-  .spacer {
     display: none !important;
   }
 }

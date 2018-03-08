@@ -8,11 +8,11 @@ const scrollTo = query => {
 const Navbar = () => {
   return (
     <nav className="navbar transition">
-      <a href="/#" onClick={() => scrollTo(".home")}>
-        Home
+      <a href="./resume.pdf" target="_blank">
+        Resume
       </a>
       <a href="/#" onClick={() => scrollTo(".projects")}>
-        Portfolio
+        Projects
       </a>
       <a href="/#" onClick={() => scrollTo(".contact")}>
         Contact

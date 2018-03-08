@@ -1,6 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+const createMarkup = input => {
+  if (Array.isArray(input)) {
+    let returnString;
+    let count = 0;
+    input.forEach(element => {
+      if (count !== 0) {
+        returnString += ` ${element}`;
+      } else {
+        returnString = `${element}`;
+      }
+      count++;
+    });
+    return { __html: `${returnString}` };
+  } else {
+    return { __html: input };
+  }
+};
+
 const ProjectItem = props => {
   return (
     <div className="project-item ">
@@ -9,15 +27,10 @@ const ProjectItem = props => {
       <div>
         <div className="project-title ">{props.title}</div>
         <div className="project-description">{props.description}</div>
-        <div className="project-links">
-          <a href="" className="project-git">
-            {props.github}
-          </a>
-          <a href={props.demo} className="project-demo">
-            Explore
-          </a>
-        </div>
-
+        <div
+          className="project-links"
+          dangerouslySetInnerHTML={createMarkup(props.demo)}
+        />
         <div className="project-tech-stack">
           {props.techStack.map((tech, index) => {
             return (
@@ -38,7 +51,7 @@ ProjectItem.propTypes = {
   description: PropTypes.string.isRequired,
   techStack: PropTypes.array.isRequired,
   github: PropTypes.string,
-  demo: PropTypes.string,
+  demo: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   year: PropTypes.number.isRequired,
   image: PropTypes.string
 };

@@ -124,9 +124,11 @@
 }
 
 .project-image {
-  height: 300px;
-  width: 300px;
+  margin-left: 20px;
+  width: 200px;
   border-radius: 15px;
+  align-self: center;
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5);
 }
 
 .spacer {

@@ -1,30 +1,9 @@
 .App {
   text-align: center;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
   padding: 20px;
   font-family: "Roboto", sans-serif;
-}
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 /* All components */
@@ -40,6 +19,7 @@
   width: 300px;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
+  font-size: 1.4em;
 }
 
 .navbar a {
@@ -75,6 +55,13 @@
   width: 85%;
   margin-top: 10vh;
   text-align: left;
+  display: inline-block;
+}
+
+.avatar {
+  top: 20px;
+  left: -10px;
+  position: relative;
 }
 
 /* Summary Component */
@@ -110,7 +97,106 @@
 }
 
 .info > a:hover {
-  background-color: blueviolet;
+  color: fuchsia;
+
+  background-color: darkslateblue;
+}
+
+.projects-text {
+  margin-bottom: 50px;
+  font-size: 1.6em;
+}
+/* ProjectContainer Component */
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ProjectItem Component */
+
+.project-item {
+  display: flex;
+  flex-direction: row !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  border-radius: 15px;
+  border-bottom: 3px solid teal;
+}
+
+.project-image {
+  margin-left: 20px;
+  width: 200px;
+  border-radius: 15px;
+  align-self: center;
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5);
+}
+
+.spacer {
+  height: 0;
+  flex: 0 1 100px;
+  margin: 0 10px;
+}
+
+.project-links {
+  margin-bottom: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.project-links > a {
+  padding: 10px;
+  border: 2px solid cornflowerblue;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.project-links > a:hover {
+  color: inherit;
+  background-color: cornflowerblue;
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.project-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-description {
+  text-align: justify;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.tech {
+  border: 2px solid teal;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 /* Contact Component */
@@ -119,13 +205,17 @@
   margin-bottom: 20px;
 }
 
+.contact-me {
+  font-size: 1.6em;
+}
+
 .contact-link-container {
   display: grid;
   margin: 0 auto;
-  /* width: 600px; */
   margin-top: 50px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   line-height: 80px;
+  font-size: 1.4em;
 }
 
 .contact-link {
@@ -164,16 +254,6 @@
   transform: scaleX(1);
 }
 
-/* .contact-link-container div:nth-child(3):after {
-  content: "";
-}
-
-.contact-link-container div:after {
-  content: "||";
-  color: black;
-  margin: 0 30px;
-} */
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -188,7 +268,13 @@
     font-size: 1.5em;
   }
   .name {
+    display: block;
+
     font-size: 2.5em;
+  }
+  .avatar {
+    top: 0;
+    left: 0;
   }
   .summary {
     font-size: 1.3em;
@@ -197,6 +283,22 @@
     font-size: 1.3em;
   }
   .contact {
-    font-size: 1.5em;
+    font-size: 1.3em;
+  }
+  .contact-link-container {
+    font-size: 1em;
+    grid-template-columns: 1fr;
+  }
+  a:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .project-image {
+    display: none !important;
   }
 }

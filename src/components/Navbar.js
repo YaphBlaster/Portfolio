@@ -1,20 +1,20 @@
 import React from "react";
 import animateScrollTo from "animated-scroll-to";
 
+const scrollTo = query => {
+  animateScrollTo(document.querySelector(query));
+};
+
 const Navbar = () => {
   return (
     <nav className="navbar transition">
-      <a
-        href="#"
-        onClick={() => animateScrollTo(document.querySelector(".home"))}
-      >
-        Home
+      <a href="./resume.pdf" target="_blank">
+        Resume
       </a>
-      <a href="#portfolio">Portfolio</a>
-      <a
-        href="#contact"
-        onClick={() => animateScrollTo(document.querySelector(".contact"))}
-      >
+      <a href="/#" onClick={() => scrollTo(".projects")}>
+        Projects
+      </a>
+      <a href="/#" onClick={() => scrollTo(".contact")}>
         Contact
       </a>
     </nav>

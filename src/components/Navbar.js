@@ -1,5 +1,6 @@
 import React from "react";
 import animateScrollTo from "animated-scroll-to";
+import user from "../data/UserInfo";
 
 // default options
 const options = {
@@ -32,7 +33,7 @@ const scrollTo = query => {
 const Navbar = () => {
   return (
     <nav className="navbar transition">
-      <a href="./resume.pdf" download>
+      <a href={user.resumeLink} target="_blank">
         Resume
       </a>
       <span onClick={() => scrollTo(".projects")}>Projects</span>

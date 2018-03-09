@@ -34,7 +34,7 @@ const about = [
   },
   {
     category: "resume",
-    info: `<a href="${resumeLink}" download>resume.pdf</a>`
+    info: `<a href="${resumeLink}" target="_blank">resume.pdf</a>`
   },
   {
     category: "education",
@@ -110,7 +110,8 @@ const Data = {
   summary,
   about,
   projects,
-  links
+  links,
+  resumeLink
 };
 
 export default Data;

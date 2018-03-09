@@ -16,41 +16,40 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 300px;
+  width: 400px;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px;
   font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.navbar-link:after,
+.contact-link a:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  border-bottom: 5px solid #3366ff;
+  transition: 0.4s;
+}
+
+.navbar-link:visited,
+.contact-link:visited {
+  text-decoration: none;
+}
+
+.navbar-link:hover:after,
+.contact-link a:hover:after {
+  width: 100%;
 }
 
 .navbar span,
 .navbar a {
   position: relative;
   color: #000;
-  text-decoration: none;
   cursor: pointer;
-}
-
-.navbar span:before,
-.navbar a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: cornflowerblue;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.navbar span:hover:before,
-.navbar a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
 }
 
 .navbar a:hover {
@@ -109,11 +108,23 @@
   background-color: darkslateblue;
 }
 
+/* ProjectContainer Component */
+
 .projects-text {
   margin-bottom: 50px;
   font-size: 1.6em;
 }
-/* ProjectContainer Component */
+
+.projects-text:after,
+.contact-me:after {
+  content: " ";
+  border: 3px solid cornflowerblue;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 50px;
+}
+
 .project-container {
   display: flex;
   flex-direction: column;
@@ -244,39 +255,10 @@
   color: black;
 }
 
-.contact-link a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: cornflowerblue;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.contact-link a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .navbar {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    width: 300px;
   }
   .name {
     display: block;
@@ -299,13 +281,6 @@
   .contact-link-container {
     font-size: 1em;
     grid-template-columns: 1fr;
-  }
-  .navbar span:hover:before,
-  .navbar a:hover:before {
-    visibility: hidden;
-  }
-  .contact-link a:hover:before {
-    visibility: hidden;
   }
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import animateScrollTo from "animated-scroll-to";
+import data from "../data/UserInfo";
 
 // default options
 const options = {
@@ -7,22 +8,10 @@ const options = {
   speed: 500,
 
   // minimum duration of the scroll
-  minDuration: 0,
+  minDuration: 300,
 
   // maximum duration of the scroll
-  maxDuration: 0,
-
-  // DOM element to scroll, default window
-  // Pass a reference to a DOM object
-  // Example: document.querySelector('#element-to-scroll'),
-  element: window,
-
-  // should animated scroll be canceled on user scroll/keypress
-  // if set to "false" user input will be disabled until animated scroll is complete
-  cancelOnUserAction: true,
-
-  // function that will be executed when the scroll animation is finished
-  onComplete: function() {}
+  maxDuration: 300
 };
 
 const scrollTo = query => {
@@ -32,11 +21,15 @@ const scrollTo = query => {
 const Navbar = () => {
   return (
     <nav className="navbar transition">
-      <a href="./resume.pdf" download>
+      <a className="navbar-link" href={data.resumeLink} target="_blank">
         Resume
       </a>
-      <span onClick={() => scrollTo(".projects")}>Projects</span>
-      <a onClick={() => scrollTo(".contact")}>Contact</a>
+      <span className="navbar-link" onClick={() => scrollTo(".projects")}>
+        Projects
+      </span>
+      <a className="navbar-link" onClick={() => scrollTo(".contact")}>
+        Contact
+      </a>
     </nav>
   );
 };

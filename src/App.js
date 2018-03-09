@@ -14,11 +14,13 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        <Anime opacity={[0, 1]} translateY={"1em"}>
+          <div>
+            <Navbar className="home" />
+          </div>
+        </Anime>
         <div className="App">
           <Anime opacity={[0, 1]} translateY={"1em"} delay={(e, i) => i * 200}>
-            <div>
-              <Navbar className="home" />
-            </div>
             <div>
               <Name name={`${Data.firstName} ${Data.lastName}`} />
             </div>

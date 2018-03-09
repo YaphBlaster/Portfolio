@@ -8,7 +8,7 @@ const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 const summary =
-  "I am a developer located in Winnipeg, MB. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. Have a look at my projects down below!  ";
+  "I am a software engineer in Winnipeg, MB. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. I love working on projects that challenge me and help me grow to become a better programmer. Thanks for visiting my page and have a look at my projects down below!  ";
 const emailAddress = "yaphet.abraha@gmail.com";
 const linkedIn = "https://www.linkedin.com/in/yaphet-abraha-95193490/";
 const github = "https://github.com/YaphBlaster";
@@ -34,7 +34,7 @@ const about = [
   },
   {
     category: "resume",
-    info: `<a href="${resumeLink}" download>resume.pdf</a>`
+    info: `<a href="${resumeLink}" target="_blank">resume.pdf</a>`
   },
   {
     category: "education",
@@ -52,7 +52,7 @@ const projects = [
   {
     title: "WowVr",
     description:
-      "Developed in Unity, this app allows users to create their dream patio on their mobile iOS or Android device and look around there patio using GoogleVR. Users place their products from a bird's eye view, and set up the patio just the way they want, and then they can go to explore view or VR view to look around the patio in a first person perspective.",
+      "Developed in Unity, this app allows users to create their dream patio on their mobile iOS or Android device and look around their patio using GoogleVR. Users place products down from a bird's eye view, setting up the patio just the way they want. They can then explore their patio in a handheld or virtual reality view.",
     techStack: ["C#", "Unity", "GoogleVr"],
     github: null,
     demo: [
@@ -75,7 +75,7 @@ const projects = [
   {
     title: "Canadian Sports Hall of Fame Induction Vr Invitation",
     description:
-      "This app was created to invite members to the Canadian Sports Hall of Fame induction for 2016 using Google Cardboard/VR. This app would have users turn on their devices and find themselves in a full auditorium where they would be invited by a video playing to come to the event.",
+      "This app was created to invite members to the Canadian Sports Hall of Fame induction for 2016 using Google Cardboard/VR. Upon putting a device in a vr headset, users find themselves in a full auditorium where they would be invited to the sports event via a video playing on a theatre screen",
     techStack: ["C#", "Unity", "GoogleVr"],
     github: null,
     demo: null,
@@ -85,7 +85,7 @@ const projects = [
   {
     title: "Canada’s Dream Garage Builder",
     description:
-      "Developed in Unity, this app allows a users to create their garage in a controlled first person experience that allows you to move products around. Users can then can explore their space by moving around using the touch screen, or putting on the Oculus Rift to see it in Virtual Reality.",
+      "Developed in Unity, this app allows a users to create their garage in a controlled first person experience that allows you to move products around. Users can then can explore their space by moving around using the touch screen, or putting on an Oculus Rift to see it in Virtual Reality.",
     techStack: ["C#", "Unity", "Oculus"],
     github: null,
     demo: null,
@@ -95,7 +95,7 @@ const projects = [
   {
     title: "Canada’s Dream Patio Builder",
     description:
-      "Developed in Unity, this application lets users create a patio through a top down builder on the touch screen and switch to first person explore mode and examine their creation. Users can then can explore their space by moving around using the touch screen, or putting on the Oculus Rift to see it in Virtual Reality.",
+      "Developed in Unity, this application lets users create a patio through a top down builder on the touch screen. Users can then can explore their space by moving around using the touch screen, or putting on an Oculus Rift to see it in Virtual Reality.",
     techStack: ["C#", "Unity", "Oculus"],
     github: null,
     demo: null,
@@ -110,7 +110,8 @@ const Data = {
   summary,
   about,
   projects,
-  links
+  links,
+  resumeLink
 };
 
 export default Data;

@@ -34,7 +34,7 @@ const about = [
   },
   {
     category: "resume",
-    info: `<a href="${resumeLink}" target="_blank">resume.pdf</a>`
+    info: `<a href="${resumeLink}" download>resume.pdf</a>`
   },
   {
     category: "education",

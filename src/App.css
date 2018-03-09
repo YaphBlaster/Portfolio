@@ -22,12 +22,14 @@
   font-size: 1.4em;
 }
 
+.navbar span,
 .navbar a {
   position: relative;
   color: #000;
   text-decoration: none;
 }
 
+.navbar span:before,
 .navbar a:before {
   content: "";
   position: absolute;
@@ -43,12 +45,16 @@
   transition: all 0.3s ease-in-out 0s;
 }
 
+.navbar span:hover:before,
 .navbar a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
+.navbar a:hover {
+  color: black;
+}
 /* Name Component */
 .name {
   font-size: 4em;

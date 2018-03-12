@@ -2,6 +2,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  color: #6e7468;
+}
+
 .App {
   text-align: center;
   max-width: 1000px;
@@ -53,12 +57,12 @@ a {
 .navbar span,
 .navbar a {
   position: relative;
-  color: #000;
+  color: #6e7468;
   cursor: pointer;
 }
 
 .navbar a:hover {
-  color: black;
+  color: #6e7468;
 }
 /* Name Component */
 .name {
@@ -141,7 +145,7 @@ a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
   border-radius: 15px;
-  border-bottom: 3px solid teal;
+  border-bottom: 3px solid cornflowerblue;
 }
 
 .project-image {
@@ -212,8 +216,15 @@ a {
   margin-top: 20px;
 }
 
+.project-tech-stack > div {
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
 .tech {
-  border: 2px solid teal;
+  border: 2px solid cornflowerblue;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
@@ -240,7 +251,7 @@ a {
 }
 
 .contact-link-container a {
-  color: black;
+  color: #6e7468;
   text-decoration: none;
   position: relative;
 }
@@ -249,7 +260,7 @@ a {
   align-self: center;
 }
 .contact-link a:hover {
-  color: black;
+  color: #6e7468;
 }
 
 @media only screen and (max-width: 768px) {
@@ -258,8 +269,6 @@ a {
     width: 300px;
   }
   .name {
-    display: block;
-
     font-size: 2.5em;
   }
   .avatar {

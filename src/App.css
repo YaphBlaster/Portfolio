@@ -77,6 +77,11 @@ body {
   position: relative;
 }
 
+.avatar,
+.avatar ellipse {
+  fill: #6e7468;
+}
+
 /* Summary Component */
 .summary {
   transition: all 0.5 ease;

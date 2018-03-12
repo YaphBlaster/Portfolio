@@ -5,12 +5,20 @@ const createMarkup = input => {
   return { __html: `${input}` };
 };
 
+const isMobileDevice = () => {
+  return (
+    typeof window.orientation !== "undefined" ||
+    navigator.userAgent.indexOf("IEMobile") !== -1
+  );
+};
+
 const Contact = props => {
+  const usingMobile = isMobileDevice();
   const links = props.links.map((link, index) => {
     return (
       <div key={index}>
         <span
-          className="contact-link"
+          className={usingMobile ? null : "contact-link"}
           dangerouslySetInnerHTML={createMarkup(link)}
         />
       </div>

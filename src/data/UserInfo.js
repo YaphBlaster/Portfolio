@@ -8,7 +8,7 @@ const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 const summary =
-  "I am a software engineer in Winnipeg, MB. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. I love working on projects that challenge me and help me grow to become a better programmer. Thanks for visiting my page and have a look at my projects down below!  ";
+  "I am a software engineer in Winnipeg, MB. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. I love working on projects that challenge me and help me grow to become a better programmer. Thanks for visiting my portfolio and please check out my projects down below!";
 const emailAddress = "yaphet.abraha@gmail.com";
 const linkedIn = "https://www.linkedin.com/in/yaphet-abraha-95193490/";
 const github = "https://github.com/YaphBlaster";
@@ -50,15 +50,12 @@ const links = about[0].info;
 
 const projects = [
   {
-    title: "WowVr",
+    title: "CT WOW Guide Virtual Reality App",
     description:
-      "Developed in Unity, this app allows users to create their dream patio on their mobile iOS or Android device and look around their patio using GoogleVR. Users place products down from a bird's eye view, setting up the patio just the way they want. They can then explore their patio in a handheld or virtual reality view.",
+      "WOWVR is a fun and creative tool that allows you to design your dream patio with Outdoor living products in a fully 3D environment. With over 100+ high definition products to choose from including BBQs, Seating, Tables, Rugs, Accessories, Umbrellas and Gazebos, you can arrange them into ANY possible way that fits your Outdoor lifestyle. Want to see your design up-close? Using WOWVR’s built-in Virtual Reality engine, you can take a virtual walk through your patio designs in a fully immersive 3D environment. WOWVR also supports Google Cardboard viewers, so you can get a Fully Immersive VR Experience using your mobile device.",
     techStack: ["C#", "Unity", "GoogleVr"],
     github: null,
-    demo: [
-      `<a href="https://play.google.com/store/apps/details?id=com.canadiantire.wowvr" target="_blank">Android</a>`,
-      `<a href=" https://itunes.apple.com/ca/app/wow-vr/id1090212996?mt=8" target="_blank">Ios</a>`
-    ],
+    demo: `<a href="http://www.canadiantire.ca/en/mobile.html" target="_blank">App Download</a>`,
     year: 2016,
     image: wowVrIcon
   },
@@ -66,7 +63,7 @@ const projects = [
     title: "Prequel Memes",
     description:
       "A web application developed in React. This application was made to streamline the process of creating images for social media. The user can choose a character and will be given multiple screenshots that are pulled from a server where that character is featured. The user can then choose to add text and then finally create an image with their text implanted onto it.",
-    techStack: ["ReactJS", "Javascript"],
+    techStack: ["ReactJS", "Javascript", "HTML5", "CSS3"],
     github: null,
     demo: `<a class="test" href="http://www.prequelmemes.com" target="_blank">View Link</a>`,
     year: 2018,

@@ -2,7 +2,6 @@ import React from "react";
 import animateScrollTo from "animated-scroll-to";
 import data from "../data/UserInfo";
 
-// default options
 const options = {
   // duration of the scroll per 1000px, default 500
   speed: 500,
@@ -18,16 +17,34 @@ const scrollTo = query => {
   animateScrollTo(document.querySelector(query), options);
 };
 
+const isMobileDevice = () => {
+  return (
+    typeof window.orientation !== "undefined" ||
+    navigator.userAgent.indexOf("IEMobile") !== -1
+  );
+};
+
 const Navbar = () => {
+  const usingMobile = isMobileDevice();
   return (
     <nav className="navbar transition">
-      <a className="navbar-link" href={data.resumeLink} target="_blank">
+      <a
+        className={usingMobile ? null : "navbar-link"}
+        href={data.resumeLink}
+        target="_blank"
+      >
         Resume
       </a>
-      <span className="navbar-link" onClick={() => scrollTo(".projects")}>
+      <span
+        className={usingMobile ? null : "navbar-link"}
+        onClick={() => scrollTo(".projects")}
+      >
         Projects
       </span>
-      <a className="navbar-link" onClick={() => scrollTo(".contact")}>
+      <a
+        className={usingMobile ? null : "navbar-link"}
+        onClick={() => scrollTo(".contact")}
+      >
         Contact
       </a>
     </nav>

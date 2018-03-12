@@ -80,7 +80,7 @@ body {
 
 .avatar,
 .avatar ellipse {
-  fill: #black;
+  fill: black;
 }
 
 /* Summary Component */

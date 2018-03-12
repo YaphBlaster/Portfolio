@@ -2,7 +2,6 @@ import React from "react";
 import animateScrollTo from "animated-scroll-to";
 import data from "../data/UserInfo";
 
-// default options
 const options = {
   // duration of the scroll per 1000px, default 500
   speed: 500,

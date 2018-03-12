@@ -50,9 +50,9 @@ const links = about[0].info;
 
 const projects = [
   {
-    title: "WowVr",
+    title: "CT WOW Guide Virtual Reality App",
     description:
-      "Developed in Unity, this app allows users to create their dream patio on their mobile iOS or Android device and look around their patio using GoogleVR. Users place products down from a bird's eye view, setting up the patio just the way they want. They can then explore their patio in a handheld or virtual reality view.",
+      "WOWVR is a fun and creative tool that allows you to design your dream patio with Outdoor living products in a fully 3D environment. With over 100+ high definition products to choose from including BBQs, Seating, Tables, Rugs, Accessories, Umbrellas and Gazebos, you can arrange them into ANY possible way that fits your Outdoor lifestyle. Want to see your design up-close? Using WOWVR’s built-in Virtual Reality engine, you can take a virtual walk through your patio designs in a fully immersive 3D environment. WOWVR also supports Google Cardboard viewers, so you can get a Fully Immersive VR Experience using your mobile device.",
     techStack: ["C#", "Unity", "GoogleVr"],
     github: null,
     demo: [

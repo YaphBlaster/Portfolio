@@ -8,7 +8,7 @@ const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 const summary =
-  "I am a software engineer in Winnipeg, MB. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. I love working on projects that challenge me and help me grow to become a better programmer. Thanks for visiting my page and have a look at my projects down below!  ";
+  "I am a software engineer in Winnipeg, MB. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. I love working on projects that challenge me and help me grow to become a better programmer. Thanks for visiting my portfolio and please check out my projects down below!";
 const emailAddress = "yaphet.abraha@gmail.com";
 const linkedIn = "https://www.linkedin.com/in/yaphet-abraha-95193490/";
 const github = "https://github.com/YaphBlaster";
@@ -66,7 +66,7 @@ const projects = [
     title: "Prequel Memes",
     description:
       "A web application developed in React. This application was made to streamline the process of creating images for social media. The user can choose a character and will be given multiple screenshots that are pulled from a server where that character is featured. The user can then choose to add text and then finally create an image with their text implanted onto it.",
-    techStack: ["ReactJS", "Javascript"],
+    techStack: ["ReactJS", "Javascript", "HTML5", "CSS3"],
     github: null,
     demo: `<a class="test" href="http://www.prequelmemes.com" target="_blank">View Link</a>`,
     year: 2018,

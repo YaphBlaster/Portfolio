@@ -69,7 +69,7 @@ body {
   font-size: 4em;
   margin-top: 50px;
   text-align: center;
-  color: black;
+  color: #6e7468;
 }
 
 .avatar {
@@ -80,7 +80,7 @@ body {
 
 .avatar,
 .avatar ellipse {
-  fill: black;
+  fill: #6e7468;
 }
 
 /* Summary Component */

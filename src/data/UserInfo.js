@@ -87,7 +87,7 @@ const projects = [
   {
     title: "Canadian Sports Hall of Fame Induction Vr Invitation",
     description:
-      "This app was created to invite members to the Canadian Sports Hall of Fame induction for 2016 using Google Cardboard/VR. Upon putting a device in a vr headset, users find themselves in a full auditorium where they would be invited to the sports event via a video playing on a theatre screen",
+      "This app was created to invite members to the 2016 Canadian Sports Hall of Fame induction using Google Cardboard/VR. Upon putting a device in a vr headset, users find themselves in a full auditorium where they would be invited to the sports event via a video playing on a theatre screen",
     techStack: ["C#", "Unity", "GoogleVr"],
     github: null,
     demo: null,
@@ -97,7 +97,7 @@ const projects = [
   {
     title: "Canada’s Dream Garage Builder",
     description:
-      "Developed in Unity, this app allows a users to create their garage in a controlled first person experience that allows you to move products around. Users can then can explore their space by moving around using the touch screen, or putting on an Oculus Rift to see it in Virtual Reality.",
+      "Developed in Unity, this app allows a user to create their garage in a controlled first person experience and allows them to move products around. Users can then can explore their space by moving around using a touch screen, or by putting on an Oculus Rift to see their garage in Virtual Reality.",
     techStack: ["C#", "Unity", "Oculus"],
     github: null,
     demo: null,

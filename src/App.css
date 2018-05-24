@@ -154,11 +154,17 @@ body {
   border-bottom: 3px solid cornflowerblue;
 }
 
-.project-image {
+.project-image-container {
   margin-left: 20px;
+  display: flex;
+  flex-direction: row !important;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.project-image {
   width: 200px;
   border-radius: 15px;
-  align-self: center;
   box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5);
 }
 
@@ -168,14 +174,20 @@ body {
   margin: 0 10px;
 }
 
+.project-links-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-links {
   margin-bottom: 30px;
   color: white;
   display: flex;
-  justify-content: space-around;
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 5px; /* and that, will result in a 10px gap */
+
+  margin-top: 30px;
 }
 
 .project-links > a {
@@ -225,16 +237,14 @@ body {
 .project-tech-stack > div {
   border-radius: 5px;
   padding: 10px;
-  margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 .tech {
   border: 2px solid cornflowerblue;
   border-radius: 5px;
   padding: 10px;
+  margin: 5px;
   margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 /* Contact Component */
@@ -293,6 +303,9 @@ body {
   .contact-link-container {
     font-size: 1em;
     grid-template-columns: 1fr;
+  }
+  .project-image-container {
+    display: none !important;
   }
 }
 

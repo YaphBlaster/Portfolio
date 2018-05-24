@@ -3,23 +3,28 @@ import wowVrIcon from "../images/WowVr.jpg";
 import CSHOFIcon from "../images/CSHOF.jpg";
 import patioBuilder from "../images/PatioBuilder.jpg";
 import garageBuilder from "../images/GarageBuilder.jpg";
+import beeline from "../images/Beeline.jpg";
+import portfolio from "../assets/avatar.svg";
 
 const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 const summary =
-  "I am a software engineer in Winnipeg, MB. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. I love working on projects that challenge me and help me grow to become a better programmer. Thanks for visiting my portfolio and please check out my projects down below!";
+  "I am a software engineer in Winnipeg, MB. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. I love working on projects that challenge and help me grow to become a better programmer. Thanks for visiting my portfolio and please check out my projects down below!";
 const emailAddress = "yaphet.abraha@gmail.com";
 const linkedIn = "https://www.linkedin.com/in/yaphet-abraha-95193490/";
 const github = "https://github.com/YaphBlaster";
 const skillsList = [
   "ReactJS",
+  "React Native",
   "Javascript",
   "HTML5",
   "CSS3",
   "C#",
   "Unity",
-  "Unreal Engine"
+  "Unreal Engine",
+  "Android",
+  "IOS"
 ];
 const education = "B.Sc. Computer Science - University of Winnipeg";
 
@@ -53,11 +58,21 @@ const projects = [
     title: "CT WOW Guide Virtual Reality App",
     description:
       "WOWVR is a fun and creative tool that allows you to design your dream patio with Outdoor living products in a fully 3D environment. With over 100+ high definition products to choose from including BBQs, Seating, Tables, Rugs, Accessories, Umbrellas and Gazebos, you can arrange them into ANY possible way that fits your Outdoor lifestyle. Want to see your design up-close? Using WOWVR’s built-in Virtual Reality engine, you can take a virtual walk through your patio designs in a fully immersive 3D environment. WOWVR also supports Google Cardboard viewers, so you can get a Fully Immersive VR Experience using your mobile device.",
-    techStack: ["C#", "Unity", "GoogleVr"],
+    techStack: ["C#", "Unity", "GoogleVr", "Android", "IOS"],
     github: null,
-    demo: `<a href="http://www.canadiantire.ca/en/mobile.html" target="_blank">App Download</a>`,
+    demo: `<a href="http://www.canadiantire.ca/en/mobile.html" target="_blank">Download App</a>`,
     year: 2016,
     image: wowVrIcon
+  },
+  {
+    title: "Portfolio",
+    description:
+      "This website! I wanted some more experience working with ReactJS and web in general so I decided a portfolio page would be a great learning experience! Feel free to view the github repository linked below.",
+    techStack: ["ReactJS", "Javascript", "HTML5", "CSS3"],
+    github: `<a href="https://github.com/YaphBlaster/Portfolio" target="_blank">View Github</a>`,
+    demo: null,
+    year: 2018,
+    image: portfolio
   },
   {
     title: "Prequel Memes",
@@ -65,7 +80,7 @@ const projects = [
       "A web application developed in React. This application was made to streamline the process of creating images for social media. The user can choose a character and will be given multiple screenshots that are pulled from a server where that character is featured. The user can then choose to add text and then finally create an image with their text implanted onto it.",
     techStack: ["ReactJS", "Javascript", "HTML5", "CSS3"],
     github: null,
-    demo: `<a class="test" href="http://www.prequelmemes.com" target="_blank">View Link</a>`,
+    demo: `<a class="test" href="http://www.prequelmemes.com" target="_blank">View Website</a>`,
     year: 2018,
     image: prequelMemesIcon
   },
@@ -88,6 +103,16 @@ const projects = [
     demo: null,
     year: 2015,
     image: garageBuilder
+  },
+  {
+    title: "Beeline",
+    description:
+      "Developed in React Native, this app allows users to input multiple destinations of interest and will then navigate the user to those destinations via the most efficient route.",
+    techStack: ["React Native", "IOS"],
+    github: null,
+    demo: `<a href="https://itunes.apple.com/us/app/beeline/id1372586745?mt=8" target="_blank">Download App</a>`,
+    year: 2018,
+    image: beeline
   },
   {
     title: "Canada’s Dream Patio Builder",

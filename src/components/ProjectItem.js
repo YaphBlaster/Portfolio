@@ -22,15 +22,24 @@ const createMarkup = input => {
 const ProjectItem = props => {
   return (
     <div className="project-item ">
-      <img src={props.image} className="project-image" alt="" />
+      <div className="project-image-container">
+        <img src={props.image} className="project-image" alt="" />
+      </div>
       <div className="spacer" />
       <div>
         <div className="project-title ">{props.title}</div>
         <div className="project-description">{props.description}</div>
-        <div
-          className="project-links"
-          dangerouslySetInnerHTML={createMarkup(props.demo)}
-        />
+        <div className="project-links-container">
+          <div
+            className="project-links"
+            dangerouslySetInnerHTML={createMarkup(props.demo)}
+          />
+          <div
+            className="project-links"
+            dangerouslySetInnerHTML={createMarkup(props.github)}
+          />
+        </div>
+
         <div className="project-tech-stack">
           {props.techStack.map((tech, index) => {
             return (

@@ -21,6 +21,7 @@ const skillsList = [
   "HTML5",
   "CSS3",
   "C#",
+  "Python",
   "Unity",
   "Unreal Engine",
   "Oculus",
@@ -62,7 +63,7 @@ const projects = [
       "WOWVR is a fun and creative tool that allows you to design your dream patio with Outdoor living products in a fully 3D environment. With over 100+ high definition products to choose from including BBQs, Seating, Tables, Rugs, Accessories, Umbrellas and Gazebos, you can arrange them into ANY possible way that fits your Outdoor lifestyle. Want to see your design up-close? Using WOWVR’s built-in Virtual Reality engine, you can take a virtual walk through your patio designs in a fully immersive 3D environment. WOWVR also supports Google Cardboard viewers, so you can get a Fully Immersive VR Experience using your mobile device.",
     techStack: ["C#", "Unity", "GoogleVr", "Android", "IOS"],
     github: null,
-    demo: `<a href="http://www.canadiantire.ca/en/mobile.html" target="_blank">Download App</a>`,
+    demo: `<a href="https://play.google.com/store/apps/details?id=com.canadiantire.wowvr&hl=en_CA" target="_blank">Download Android</a>`,
     year: 2016,
     image: wowVrIcon
   },

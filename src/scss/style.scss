@@ -1,0 +1,422 @@
+// VARIABLES
+$primary-color: #6e7468;
+$accent-color: cornflowerblue;
+
+// MIXINS
+@mixin terminalButtons {
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  position: absolute;
+  @content;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: $primary-color;
+}
+
+.App {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+}
+
+/* All components */
+.transition {
+  transition: all 0.5s ease;
+}
+
+.mobile-link {
+  &::after {
+    content: none !important;
+  }
+}
+
+/* Navbar Component */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 400px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: -20px;
+
+  span,
+  a {
+    position: relative;
+    color: $primary-color;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 0%;
+      border-bottom: 5px solid $accent-color;
+      transition: 0.4s;
+    }
+    &:visited {
+      text-decoration: none;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+/* Name Component */
+.name {
+  font-size: 4em;
+  margin-top: 50px;
+  text-align: center;
+  color: $primary-color;
+}
+
+.avatar {
+  top: 20px;
+  left: -10px;
+  position: relative;
+}
+
+.avatar,
+.avatar ellipse {
+  fill: $primary-color;
+}
+
+/* Summary Component */
+.summary {
+  transition: all 0.5 ease;
+  text-align: justify;
+  margin-top: 50px;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+/* About Component*/
+.about {
+  color: #fff;
+  font-family: monospace;
+  font-size: 15px;
+  text-align: left;
+  position: static;
+}
+
+.category {
+  margin-top: 30px;
+}
+
+.info {
+  color: #e7d184;
+  text-decoration: none;
+  a {
+    color: hotpink;
+    &:hover {
+      color: fuchsia;
+      background-color: darkslateblue;
+    }
+  }
+}
+
+/* ProjectContainer Component */
+
+.projects-text {
+  margin-bottom: 50px;
+  font-size: 1.6em;
+
+  &::after {
+    content: " ";
+    border: 3px solid $accent-color;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 50px;
+  }
+}
+
+.contact-me:after {
+  content: " ";
+  border: 3px solid $accent-color;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 50px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ProjectItem Component */
+
+.project-item {
+  display: flex;
+  flex-direction: row !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  border-radius: 15px;
+  border-bottom: 3px solid $accent-color;
+}
+
+.project-image-container {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row !important;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.project-image {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5);
+}
+
+.spacer {
+  height: 0;
+  flex: 0 1 100px;
+  margin: 0 10px;
+}
+
+.project-links-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-links {
+  margin-bottom: 30px;
+  color: white;
+  display: flex;
+  margin: 5px;
+  margin-top: 30px;
+  a {
+    padding: 10px;
+    border: 2px solid $accent-color;
+    background-color: $accent-color;
+    border-radius: 5px;
+    color: inherit;
+    text-transform: uppercase;
+    &:hover {
+      color: inherit;
+      background-color: $accent-color;
+      -moz-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      -o-transform: translateY(-2px);
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.project-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-description {
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+  div {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .tech {
+    border: 2px solid $accent-color;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Contact Component */
+.contact {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.contact-me {
+  font-size: 1.6em;
+}
+
+.contact-link-container {
+  display: grid;
+  margin: 0 auto;
+  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  line-height: 80px;
+  font-size: 1.4em;
+
+  a {
+    position: relative;
+    color: $primary-color;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 0%;
+      border-bottom: 5px solid $accent-color;
+      transition: 0.4s;
+    }
+    &:visited {
+      text-decoration: none;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    font-size: 1.4em;
+    width: 300px;
+  }
+  .name {
+    font-size: 2.5em;
+  }
+  .avatar {
+    top: 0;
+    left: 0;
+  }
+  .summary {
+    font-size: 1.3em;
+  }
+  .about {
+    font-size: 1.3em;
+  }
+  .contact {
+    font-size: 1.3em;
+  }
+  .contact-link-container {
+    font-size: 1em;
+    grid-template-columns: 1fr;
+  }
+  .project-image-container {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .project-image {
+    display: none !important;
+  }
+}
+
+.terminal {
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#head {
+  font-family: monospace;
+  color: #fff;
+  margin: auto;
+  padding: 35px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#red {
+  @include terminalButtons {
+    background-color: #e94b35;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+}
+#yellow {
+  @include terminalButtons {
+    background-color: #f0f000;
+    margin-left: 35px;
+    margin-top: 5px;
+  }
+}
+#green {
+  @include terminalButtons {
+    background-color: #1aaf5c;
+    margin-left: 55px;
+    margin-top: 5px;
+  }
+}
+#bar {
+  text-align: center;
+  height: 25px;
+  background-color: #dad9d9;
+  margin: 0 auto;
+  font-family: monospace;
+  float: none;
+  border-radius: 8px 8px 0 0;
+}
+#screen {
+  background-color: #33485e;
+  height: 350px;
+  margin: 0 auto;
+  padding: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 50px;
+}
+
+/* Blinking Cursor */
+.cursor {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 0px;
+  &::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background: white;
+    opacity: 0;
+    display: inline-block;
+    animation: blink 0.55s cubic-bezier(0.075, 0.82, 0.165, 1) infinite
+      alternate;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #screen {
+    height: 430px;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

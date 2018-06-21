@@ -1,8 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const createMarkup = input => {
-  return { __html: `${input}` };
+const createMarkup = (input, isMobile) => {
+  let parsedInput = input;
+  if (isMobile) {
+    parsedInput = input.replace("placeholder", "mobile-link");
+  }
+  return { __html: `${parsedInput}` };
 };
 
 const isMobileDevice = () => {
@@ -17,10 +21,7 @@ const Contact = props => {
   const links = props.links.map((link, index) => {
     return (
       <div key={index}>
-        <span
-          className={usingMobile ? null : "contact-link"}
-          dangerouslySetInnerHTML={createMarkup(link)}
-        />
+        <span dangerouslySetInnerHTML={createMarkup(link, usingMobile)} />
       </div>
     );
   });

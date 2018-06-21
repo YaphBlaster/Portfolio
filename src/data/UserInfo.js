@@ -20,6 +20,7 @@ const skillsList = [
   "Javascript",
   "HTML5",
   "CSS3",
+  "Sass",
   "C#",
   "Python",
   "Unity",
@@ -35,9 +36,9 @@ const about = [
   {
     category: "contactInfo",
     info: [
-      `<a href="mailto:${emailAddress}">${emailAddress}</a>`,
-      `<a target="_blank" href="${linkedIn}">LinkedIn</a>`,
-      `<a target="_blank" href="${github}">GitHub</a>`
+      `<a class="placeholder" href="mailto:${emailAddress}">${emailAddress}</a>`,
+      `<a class="placeholder" target="_blank" href="${linkedIn}">LinkedIn</a>`,
+      `<a class="placeholder" target="_blank" href="${github}">GitHub</a>`
     ]
   },
   {
@@ -71,7 +72,7 @@ const projects = [
     title: "Portfolio",
     description:
       "This website! I wanted some more experience working with ReactJS and web in general so I decided a portfolio page would be a great learning experience! Feel free to view the github repository linked below.",
-    techStack: ["ReactJS", "Javascript", "HTML5", "CSS3"],
+    techStack: ["ReactJS", "Javascript", "Sass", "HTML5", "CSS3"],
     github: `<a href="https://github.com/YaphBlaster/Portfolio" target="_blank">View Github</a>`,
     demo: null,
     year: 2018,

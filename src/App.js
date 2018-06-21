@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./css/style.css";
 import "./style/terminal.css";
 import Data from "./data/UserInfo";
 import Anime from "react-anime";

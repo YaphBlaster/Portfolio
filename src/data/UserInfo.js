@@ -10,7 +10,7 @@ const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 const summary =
-  "I am a software engineer in Winnipeg, MB. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. I love working on projects that challenge and help me grow to become a better programmer. Thanks for visiting my portfolio and please check out my projects down below!";
+  "I am a software engineer in Winnipeg, Manitoba. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. I love working on projects that challenge and help me grow to become a better programmer. Thanks for visiting my portfolio and please check out my projects down below!";
 const emailAddress = "yaphet.abraha@gmail.com";
 const linkedIn = "https://www.linkedin.com/in/yaphet-abraha-95193490/";
 const github = "https://github.com/YaphBlaster";

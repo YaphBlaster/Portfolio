@@ -320,13 +320,14 @@ body {
 
 #screen {
   background-color: #33485e;
-  height: 350px;
+  height: 100%;
   margin: 0 auto;
   padding: 1px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 0 0 8px 8px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding-bottom: 30px; }
 
 /* Blinking Cursor */
 .cursor {
@@ -342,9 +343,6 @@ body {
     display: inline-block;
     animation: blink 0.55s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate; }
 
-@media only screen and (max-width: 768px) {
-  #screen {
-    height: 430px; } }
 @keyframes blink {
   50% {
     opacity: 0; }

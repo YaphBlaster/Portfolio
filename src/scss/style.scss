@@ -1,16 +1,4 @@
-// VARIABLES
-$primary-color: #6e7468;
-$accent-color: cornflowerblue;
-
-// MIXINS
-@mixin terminalButtons {
-  border-radius: 100%;
-  width: 15px;
-  height: 15px;
-  margin: 0 auto;
-  position: absolute;
-  @content;
-}
+@import "./partials/variables.scss", "./partials/mixins.scss";
 
 a {
   text-decoration: none;
@@ -87,11 +75,10 @@ body {
   top: 20px;
   left: -10px;
   position: relative;
-}
-
-.avatar,
-.avatar ellipse {
   fill: $primary-color;
+  ellipse {
+    fill: $primary-color;
+  }
 }
 
 /* Summary Component */
@@ -181,6 +168,11 @@ body {
   width: 200px;
   border-radius: 15px;
   box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5);
+  @media only screen and (max-width: $break-m) {
+    & {
+      display: none !important;
+    }
+  }
 }
 
 .spacer {
@@ -210,8 +202,7 @@ body {
     color: inherit;
     text-transform: uppercase;
     &:hover {
-      color: inherit;
-      background-color: $accent-color;
+      background-color: darken($accent-color, 10%);
       -moz-transform: translateY(-2px);
       -ms-transform: translateY(-2px);
       -o-transform: translateY(-2px);
@@ -297,7 +288,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $break-s) {
   .navbar {
     font-size: 1.4em;
     width: 300px;
@@ -327,12 +318,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 860px) {
-  .project-image {
-    display: none !important;
-  }
-}
-
+// Terminal Screen
 .terminal {
   border-radius: 25px;
   margin: 0 auto;

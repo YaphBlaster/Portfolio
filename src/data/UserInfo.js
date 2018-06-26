@@ -17,7 +17,8 @@ const github = "https://github.com/YaphBlaster";
 const skillsList = [
   "ReactJS",
   "React Native",
-  "Javascript",
+  "Redux",
+  "JavaScript",
   "HTML5",
   "CSS3",
   "Sass",

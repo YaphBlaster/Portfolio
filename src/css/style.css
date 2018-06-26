@@ -61,11 +61,10 @@ body {
 .avatar {
   top: 20px;
   left: -10px;
-  position: relative; }
-
-.avatar,
-.avatar ellipse {
+  position: relative;
   fill: #6e7468; }
+  .avatar ellipse {
+    fill: #6e7468; }
 
 /* Summary Component */
 .summary {
@@ -139,6 +138,9 @@ body {
   width: 200px;
   border-radius: 15px;
   box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5); }
+  @media only screen and (max-width: 860px) {
+    .project-image {
+      display: none !important; } }
 
 .spacer {
   height: 0;
@@ -165,8 +167,7 @@ body {
     color: inherit;
     text-transform: uppercase; }
     .project-links a:hover {
-      color: inherit;
-      background-color: cornflowerblue;
+      background-color: #3676e8;
       -moz-transform: translateY(-2px);
       -ms-transform: translateY(-2px);
       -o-transform: translateY(-2px);
@@ -261,9 +262,6 @@ body {
     grid-template-columns: 1fr; }
 
   .project-image-container {
-    display: none !important; } }
-@media only screen and (max-width: 860px) {
-  .project-image {
     display: none !important; } }
 .terminal {
   border-radius: 25px;

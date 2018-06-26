@@ -1,0 +1,9 @@
+// MIXINS
+@mixin terminalButtons {
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  position: absolute;
+  @content;
+}

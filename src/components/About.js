@@ -34,13 +34,13 @@ const About = props => {
     );
   });
   return (
-    <div className="terminal transition">
+    <div className="terminal">
       <div id="bar">
         <div id="red" />
         <div id="yellow" />
         <div id="green" />
       </div>
-      <div id="screen" className="about">
+      <div id="screen" className="about transition">
         {about}
         <div>
           <div className="category">

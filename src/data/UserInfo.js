@@ -9,10 +9,12 @@ import portfolio from "../assets/avatar.svg";
 const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
-const summary =
-  "I am a software engineer in Winnipeg, Manitoba. I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. I love working on projects that challenge and help me grow to become a better programmer. Thanks for visiting my portfolio and please check out my projects down below!";
+const summary = `I am a software engineer in Winnipeg, Manitoba. 
+  I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. 
+  I love working on projects that challenge and help me grow to become a better programmer. 
+  Thanks for visiting my portfolio and please check out my projects down below!`;
 const emailAddress = "yaphet.abraha@gmail.com";
-const linkedIn = "https://www.linkedin.com/in/yaphet-abraha-95193490/";
+const linkedIn = "https://www.linkedin.com/in/yaphet-abraha-95193490";
 const github = "https://github.com/YaphBlaster";
 const skillsList = [
   "ReactJS",
@@ -72,7 +74,7 @@ const projects = [
   {
     title: "Portfolio",
     description:
-      "This website! I wanted some more experience working with ReactJS and web in general so I decided a portfolio page would be a great learning experience! Feel free to view the github repository linked below.",
+      "This website! I wanted some more experience working with ReactJS, Sass, and web in general so I decided a portfolio page would be a great learning experience! Feel free to view the github repository linked below.",
     techStack: ["ReactJS", "Javascript", "Sass", "HTML5", "CSS3"],
     github: `<a href="https://github.com/YaphBlaster/Portfolio" target="_blank">View Github</a>`,
     demo: null,

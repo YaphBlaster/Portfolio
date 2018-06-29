@@ -21,7 +21,7 @@ const createMarkup = input => {
 
 const ProjectItem = props => {
   return (
-    <div className="project-item ">
+    <div className="project-item">
       <div className="project-image-container">
         <img src={props.image} className="project-image" alt="" />
       </div>

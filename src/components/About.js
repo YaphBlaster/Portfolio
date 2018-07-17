@@ -36,9 +36,9 @@ const About = props => {
   return (
     <div className="terminal">
       <div id="bar">
-        <div id="red" />
-        <div id="yellow" />
-        <div id="green" />
+        <div id="bar-red" />
+        <div id="bar-yellow" />
+        <div id="bar-green" />
       </div>
       <div id="screen" className="about transition">
         {about}

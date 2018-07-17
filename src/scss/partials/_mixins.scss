@@ -1,9 +1,35 @@
-// MIXINS
+// Media queries
+@mixin mq($break) {
+  $value: map-get(
+    $map: $breakpoints,
+    $key: $break
+  );
+
+  @if $break == "sm" {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else if $break == "med" {
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+}
+
+//Terminal Button Looping
 @mixin terminalButtons {
-  border-radius: 100%;
-  width: 15px;
-  height: 15px;
-  margin: 0 auto;
-  position: absolute;
-  @content;
+  @each $label, $map in $button-colors {
+    $button-color: map-get($map, color);
+    $left: map-get($map, left);
+    &-#{$label} {
+      border-radius: 100%;
+      width: 15px;
+      height: 15px;
+      margin: 0 auto;
+      position: absolute;
+      margin-top: 5px;
+      background-color: $button-color;
+      margin-left: $left;
+    }
+  }
 }

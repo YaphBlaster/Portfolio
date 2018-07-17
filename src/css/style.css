@@ -138,7 +138,7 @@ body {
   width: 200px;
   border-radius: 15px;
   box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5); }
-  @media only screen and (max-width: 860px) {
+  @media (max-width: 860px) {
     .project-image {
       display: none !important; } }
 
@@ -236,7 +236,7 @@ body {
     .contact-link-container a:hover::after {
       width: 100%; }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .navbar {
     font-size: 1.4em;
     width: 300px; }
@@ -277,36 +277,6 @@ body {
   font-size: 40px;
   text-align: center; }
 
-#red {
-  border-radius: 100%;
-  width: 15px;
-  height: 15px;
-  margin: 0 auto;
-  position: absolute;
-  background-color: #e94b35;
-  margin-left: 15px;
-  margin-top: 5px; }
-
-#yellow {
-  border-radius: 100%;
-  width: 15px;
-  height: 15px;
-  margin: 0 auto;
-  position: absolute;
-  background-color: #f0f000;
-  margin-left: 35px;
-  margin-top: 5px; }
-
-#green {
-  border-radius: 100%;
-  width: 15px;
-  height: 15px;
-  margin: 0 auto;
-  position: absolute;
-  background-color: #1aaf5c;
-  margin-left: 55px;
-  margin-top: 5px; }
-
 #bar {
   text-align: center;
   height: 25px;
@@ -315,6 +285,33 @@ body {
   font-family: monospace;
   float: none;
   border-radius: 8px 8px 0 0; }
+  #bar-red {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 5px;
+    background-color: #e94b35;
+    margin-left: 15px; }
+  #bar-yellow {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 5px;
+    background-color: #f0f000;
+    margin-left: 35px; }
+  #bar-green {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 5px;
+    background-color: #1aaf4c;
+    margin-left: 55px; }
 
 #screen {
   background-color: #33485e;

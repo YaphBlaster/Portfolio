@@ -168,7 +168,8 @@ body {
   width: 200px;
   border-radius: 15px;
   box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5);
-  @media only screen and (max-width: $break-m) {
+
+  @include mq("med") {
     & {
       display: none !important;
     }
@@ -288,7 +289,7 @@ body {
   }
 }
 
-@media only screen and (max-width: $break-s) {
+@include mq("sm") {
   .navbar {
     font-size: 1.4em;
     width: 300px;
@@ -333,28 +334,6 @@ body {
   font-size: 40px;
   text-align: center;
 }
-
-#red {
-  @include terminalButtons {
-    background-color: #e94b35;
-    margin-left: 15px;
-    margin-top: 5px;
-  }
-}
-#yellow {
-  @include terminalButtons {
-    background-color: #f0f000;
-    margin-left: 35px;
-    margin-top: 5px;
-  }
-}
-#green {
-  @include terminalButtons {
-    background-color: #1aaf5c;
-    margin-left: 55px;
-    margin-top: 5px;
-  }
-}
 #bar {
   text-align: center;
   height: 25px;
@@ -363,6 +342,7 @@ body {
   font-family: monospace;
   float: none;
   border-radius: 8px 8px 0 0;
+  @include terminalButtons();
 }
 #screen {
   background-color: #33485e;

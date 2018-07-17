@@ -1,6 +1,6 @@
-import prequelMemesIcon from "../images/PrequelMemes.png";
-import wowVrIcon from "../images/WowVr.jpg";
-import CSHOFIcon from "../images/CSHOF.jpg";
+import prequelMemes from "../images/PrequelMemes.png";
+import wowVr from "../images/WowVr.jpg";
+import CSHOF from "../images/CSHOF.jpg";
 import patioBuilder from "../images/PatioBuilder.jpg";
 import garageBuilder from "../images/GarageBuilder.jpg";
 import beeline from "../images/Beeline.jpg";
@@ -10,7 +10,7 @@ const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 const summary = `I am a software engineer in Winnipeg, Manitoba. 
-  I've developed on various platforms ranging from web applications using React and Javascript to virtual reality using Unity and Unreal Engine. 
+  I've developed on various platforms ranging from web applications using React and JavaScript to virtual reality using Unity and Unreal Engine. 
   I love working on projects that challenge and help me grow to become a better programmer. 
   Thanks for visiting my portfolio and please check out my projects down below!`;
 const emailAddress = "yaphet.abraha@gmail.com";
@@ -69,7 +69,7 @@ const projects = [
     github: null,
     demo: `<a href="https://play.google.com/store/apps/details?id=com.canadiantire.wowvr&hl=en_CA" target="_blank">Download Android</a>`,
     year: 2016,
-    image: wowVrIcon
+    image: wowVr
   },
   {
     title: "Portfolio",
@@ -89,7 +89,7 @@ const projects = [
     github: null,
     demo: `<a href="http://www.prequelmemes.com" target="_blank">View Website</a>`,
     year: 2018,
-    image: prequelMemesIcon
+    image: prequelMemes
   },
   {
     title: "Canadian Sports Hall of Fame Induction Vr Invitation",
@@ -99,7 +99,7 @@ const projects = [
     github: null,
     demo: null,
     year: 2016,
-    image: CSHOFIcon
+    image: CSHOF
   },
   {
     title: "Canada’s Dream Garage Builder",

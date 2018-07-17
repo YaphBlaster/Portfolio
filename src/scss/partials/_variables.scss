@@ -1,5 +1,25 @@
 // VARIABLES
 $primary-color: #6e7468;
 $accent-color: cornflowerblue;
-$break-s: 768px;
-$break-m: 860px;
+
+//Breakpoints
+$breakpoints: (
+  "sm": 768px,
+  "med": 860px
+);
+
+//Terminal Button Colors
+$button-colors: (
+  "red": (
+    color: #e94b35,
+    left: 15px
+  ),
+  "yellow": (
+    color: #f0f000,
+    left: 35px
+  ),
+  "green": (
+    color: #1aaf4c,
+    left: 55px
+  )
+);

@@ -2,7 +2,10 @@ a {
   text-decoration: none; }
 
 body {
-  color: #6e7468; }
+  color: #6e7468;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
 
 .App {
   text-align: center;

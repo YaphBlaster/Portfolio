@@ -67,7 +67,7 @@ const projects = [
       "WOWVR is a fun and creative tool that allows you to design your dream patio with Outdoor living products in a fully 3D environment. With over 100+ high definition products to choose from including BBQs, Seating, Tables, Rugs, Accessories, Umbrellas and Gazebos, you can arrange them into ANY possible way that fits your Outdoor lifestyle. Want to see your design up-close? Using WOWVR’s built-in Virtual Reality engine, you can take a virtual walk through your patio designs in a fully immersive 3D environment. WOWVR also supports Google Cardboard viewers, so you can get a Fully Immersive VR Experience using your mobile device.",
     techStack: ["C#", "Unity", "GoogleVr", "Android", "IOS"],
     github: null,
-    demo: `<a href="https://play.google.com/store/apps/details?id=com.canadiantire.wowvr&hl=en_CA" target="_blank">Download Android</a>`,
+    demo: `<a href="https://play.google.com/store/apps/details?id=com.canadiantire.wowvr&hl=en_CA" target="_blank">Download for Android</a>`,
     year: 2016,
     image: wowVr
   },
@@ -85,7 +85,7 @@ const projects = [
     title: "Prequel Memes",
     description:
       "A web application developed in React. This application was made to streamline the process of creating images for social media. The user can choose a character and will be given multiple screenshots that are pulled from a server where that character is featured. The user can then choose to add text and then finally create an image with their text implanted onto it.",
-    techStack: ["ReactJS", "Javascript", "HTML5", "CSS3"],
+    techStack: ["ReactJS", "Redux", "Sass", "Javascript", "HTML5", "CSS3"],
     github: null,
     demo: `<a href="http://www.prequelmemes.com" target="_blank">View Website</a>`,
     year: 2018,
@@ -117,7 +117,7 @@ const projects = [
       "Developed in React Native, this app allows users to input multiple destinations of interest and will then navigate the user to those destinations via the most efficient route.",
     techStack: ["React Native", "IOS"],
     github: null,
-    demo: `<a href="https://itunes.apple.com/us/app/beeline/id1372586745?mt=8" target="_blank">Download App</a>`,
+    demo: `<a href="https://itunes.apple.com/us/app/beeline/id1372586745?mt=8" target="_blank">Download for IOS</a>`,
     year: 2018,
     image: beeline
   },

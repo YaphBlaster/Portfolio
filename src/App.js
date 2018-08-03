@@ -9,10 +9,10 @@ import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import ProjectContainer from "./components/ProjectContainer";
 import { addBackToTop } from "vanilla-back-to-top";
-addBackToTop();
 
 class App extends Component {
   render() {
+    addBackToTop();
     return (
       <div className="container">
         <Anime opacity={[0, 1]} translateY={"1em"}>

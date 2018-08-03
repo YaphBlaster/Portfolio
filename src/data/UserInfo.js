@@ -86,7 +86,7 @@ const projects = [
     description:
       "A web application developed in React. This application was made to streamline the process of creating images for social media. The user can choose a character and will be given multiple screenshots that are pulled from a server where that character is featured. The user can then choose to add text and then finally create an image with their text implanted onto it.",
     techStack: ["ReactJS", "Redux", "Sass", "Javascript", "HTML5", "CSS3"],
-    github: null,
+    github: `<a href="https://github.com/YaphBlaster/pm3" target="_blank">View Github</a>`,
     demo: `<a href="http://www.prequelmemes.com" target="_blank">View Website</a>`,
     year: 2018,
     image: prequelMemes

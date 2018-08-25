@@ -2,22 +2,20 @@ import React, { Component } from "react";
 import "./css/style.css";
 import Data from "./data/UserInfo";
 import Anime from "react-anime";
+import Navbar from "./components/Navbar";
 import Name from "./components/Name";
 import Summary from "./components/Summary";
 import About from "./components/About";
-import Navbar from "./components/Navbar";
-import Contact from "./components/Contact";
 import ProjectContainer from "./components/ProjectContainer";
-import { addBackToTop } from "vanilla-back-to-top";
+import Contact from "./components/Contact";
 
 class App extends Component {
   render() {
-    addBackToTop();
     return (
       <div className="container">
         <Anime opacity={[0, 1]} translateY={"1em"}>
           <div>
-            <Navbar className="home" />
+            <Navbar />
           </div>
         </Anime>
         <div className="App">
@@ -35,7 +33,7 @@ class App extends Component {
               <ProjectContainer projects={Data.projects} />
             </div>
             <div>
-              <Contact id="contact" links={Data.links} />
+              <Contact links={Data.links} />
             </div>
           </Anime>
         </div>

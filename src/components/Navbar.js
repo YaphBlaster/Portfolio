@@ -27,7 +27,7 @@ const isMobileDevice = () => {
 const Navbar = () => {
   const usingMobile = isMobileDevice();
   return (
-    <nav className="navbar transition">
+    <nav className="navbar transition home">
       <a
         className={usingMobile ? "mobile-link" : null}
         href={data.resumeLink}

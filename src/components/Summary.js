@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Summary = props => {
-  return <div className="summary transition">{props.summary}</div>;
+  return <p className="summary transition">{props.summary}</p>;
 };
 
 Summary.propTypes = {

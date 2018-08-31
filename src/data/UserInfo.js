@@ -21,6 +21,9 @@ const skillsList = [
   "React Native",
   "Redux",
   "JavaScript",
+  "Enzyme",
+  "Mocha",
+  "Chai",
   "HTML5",
   "CSS3",
   "Sass",
@@ -75,7 +78,16 @@ const projects = [
     title: "Portfolio",
     description:
       "This website! I wanted some more experience working with ReactJS, Sass, and web in general so I decided a portfolio page would be a great learning experience! Feel free to view the github repository linked below.",
-    techStack: ["ReactJS", "Javascript", "Sass", "HTML5", "CSS3"],
+    techStack: [
+      "ReactJS",
+      "Javascript",
+      "Sass",
+      "Enzyme",
+      "Mocha",
+      "Chai",
+      "HTML5",
+      "CSS3"
+    ],
     github: `<a href="https://github.com/YaphBlaster/Portfolio" target="_blank">View Github</a>`,
     demo: null,
     year: 2018,

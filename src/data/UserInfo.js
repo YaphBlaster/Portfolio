@@ -24,6 +24,7 @@ const skillsList = [
   "Enzyme",
   "Mocha",
   "Chai",
+  "Jest",
   "HTML5",
   "CSS3",
   "Sass",

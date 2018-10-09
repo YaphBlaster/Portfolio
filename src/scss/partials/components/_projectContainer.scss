@@ -1,0 +1,29 @@
+/* ProjectContainer Component */
+
+.projects-text {
+  margin-bottom: 50px;
+  font-size: 1.6em;
+
+  &::after {
+    content: " ";
+    border: 3px solid $accent-color;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 50px;
+  }
+}
+
+.contact-me:after {
+  content: " ";
+  border: 3px solid $accent-color;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 50px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}

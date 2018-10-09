@@ -1,0 +1,104 @@
+/* ProjectItem Component */
+
+.project-item {
+  display: flex;
+  flex-direction: row !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  border-radius: 15px;
+  border-bottom: 3px solid $accent-color;
+}
+
+.project-image-container {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row !important;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.project-image {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5);
+
+  @include mq("med") {
+    & {
+      display: none !important;
+    }
+  }
+}
+
+.spacer {
+  height: 0;
+  flex: 0 1 100px;
+  margin: 0 10px;
+}
+
+.project-links-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-links {
+  margin-bottom: 30px;
+  color: white;
+  display: flex;
+  margin: 5px;
+  margin-top: 30px;
+  a {
+    transition: all 0.5s ease;
+    padding: 10px;
+    border: 2px solid $accent-color;
+    background-color: $accent-color;
+    border-radius: 5px;
+    color: inherit;
+    text-transform: uppercase;
+    &:hover {
+      background-color: darken($accent-color, 10%);
+      -moz-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      -o-transform: translateY(-2px);
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.project-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-description {
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+  div {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .tech {
+    border: 2px solid $accent-color;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+}

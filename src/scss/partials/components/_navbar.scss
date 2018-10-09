@@ -1,0 +1,34 @@
+/* Navbar Component */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 400px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: -20px;
+
+  span,
+  a {
+    position: relative;
+    color: $primary-color;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 0%;
+      border-bottom: 5px solid $accent-color;
+      transition: 0.4s;
+    }
+    &:visited {
+      text-decoration: none;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

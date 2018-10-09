@@ -1,0 +1,39 @@
+/* Contact Component */
+.contact {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.contact-me {
+  font-size: 1.6em;
+}
+
+.contact-link-container {
+  display: grid;
+  margin: 0 auto;
+  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  line-height: 80px;
+  font-size: 1.4em;
+
+  a {
+    position: relative;
+    color: $primary-color;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 0%;
+      border-bottom: 5px solid $accent-color;
+      transition: 0.4s;
+    }
+    &:visited {
+      text-decoration: none;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

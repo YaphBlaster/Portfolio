@@ -1,0 +1,17 @@
+/* Name Component */
+.name {
+  font-size: 4em;
+  margin-top: 50px;
+  text-align: center;
+  color: $primary-color;
+}
+
+.avatar {
+  top: 20px;
+  left: -10px;
+  position: relative;
+  fill: $primary-color;
+  ellipse {
+    fill: $primary-color;
+  }
+}

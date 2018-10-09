@@ -1,0 +1,24 @@
+/* About Component*/
+.about {
+  color: #fff;
+  font-family: monospace;
+  font-size: 15px;
+  text-align: left;
+  position: static;
+}
+
+.category {
+  margin-top: 30px;
+}
+
+.info {
+  color: #e7d184;
+  text-decoration: none;
+  a {
+    color: hotpink;
+    &:hover {
+      color: fuchsia;
+      background-color: darkslateblue;
+    }
+  }
+}

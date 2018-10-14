@@ -5,6 +5,7 @@ import patioBuilder from "../images/PatioBuilder.jpg";
 import garageBuilder from "../images/GarageBuilder.jpg";
 import beeline from "../images/Beeline.jpg";
 import portfolio from "../assets/avatar.svg";
+import innovationLab from "../images/InnovationLab.png";
 
 const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
@@ -66,12 +67,14 @@ const links = about[0].info;
 
 const projects = [
   {
-    title: "CT WOW Guide Virtual Reality App",
+    title: "WowVR",
     description:
       "WOWVR is a fun and creative tool that allows you to design your dream patio with Outdoor living products in a fully 3D environment. With over 100+ high definition products to choose from including BBQs, Seating, Tables, Rugs, Accessories, Umbrellas and Gazebos, you can arrange them into ANY possible way that fits your Outdoor lifestyle. Want to see your design up-close? Using WOWVR’s built-in Virtual Reality engine, you can take a virtual walk through your patio designs in a fully immersive 3D environment. WOWVR also supports Google Cardboard viewers, so you can get a Fully Immersive VR Experience using your mobile device.",
     techStack: ["C#", "Unity", "GoogleVr", "Android", "IOS"],
     github: null,
-    demo: `<a href="https://play.google.com/store/apps/details?id=com.canadiantire.wowvr&hl=en_CA" target="_blank">Download for Android</a>`,
+    demo:
+      "https://play.google.com/store/apps/details?id=com.canadiantire.wowvr&hl=en_CA",
+    demoText: "Download for Android",
     year: 2016,
     image: wowVr
   },
@@ -89,18 +92,30 @@ const projects = [
       "HTML5",
       "CSS3"
     ],
-    github: `<a href="https://github.com/YaphBlaster/Portfolio" target="_blank">View Github</a>`,
+    github: "https://github.com/YaphBlaster/Portfolio",
     demo: null,
-    year: 2018,
+    year: 9999,
     image: portfolio
+  },
+  {
+    title: "Wawanesa Innovation Dashboard",
+    description:
+      "Developed in ReactJS, this web application is used as a central hub for the prototypes made in Wawanesa's Innovation Lab. The Innovation Lab is heavily focused on creating insurance solutions using the most cutting edge technologies, however, these technologies are backend heavy so the Innovation Dashboard was created to give a face to all the proof of concepts at the lab. As the Lead Developer for this project, I mentored junior developers to learn ReactJS, established version control workflows and  set up the groundwork to expedite tedious tasks such as routing, component building, and hosting/deployement solutions.",
+    techStack: ["ReactJS", "Redux", "Sass", "Javascript", "HTML5", "CSS3"],
+    github: null,
+    demo: "http://www.wawainnodash.surge.sh",
+    demoText: "View Website",
+    year: 2018,
+    image: innovationLab
   },
   {
     title: "Prequel Memes",
     description:
       "A web application developed in React. This application was made to streamline the process of creating images for social media. The user can choose a character and will be given multiple screenshots that are pulled from a server where that character is featured. The user can then choose to add text and then finally create an image with their text implanted onto it.",
     techStack: ["ReactJS", "Redux", "Sass", "Javascript", "HTML5", "CSS3"],
-    github: `<a href="https://github.com/YaphBlaster/pm3" target="_blank">View Github</a>`,
-    demo: `<a href="http://www.prequelmemes.com" target="_blank">View Website</a>`,
+    github: "https://github.com/YaphBlaster/pm3",
+    demo: "http://www.prequelmemes.com",
+    demoText: "View Website",
     year: 2018,
     image: prequelMemes
   },
@@ -130,14 +145,15 @@ const projects = [
       "Developed in React Native, this app allows users to input multiple destinations of interest and will then navigate the user to those destinations via the most efficient route.",
     techStack: ["React Native", "IOS"],
     github: null,
-    demo: `<a href="https://itunes.apple.com/us/app/beeline/id1372586745?mt=8" target="_blank">Download for IOS</a>`,
+    demo: "https://itunes.apple.com/us/app/beeline/id1372586745?mt=8",
+    demoText: "Download for IOS",
     year: 2018,
     image: beeline
   },
   {
     title: "Canada’s Dream Patio Builder",
     description:
-      "Developed in Unity, this application lets users create a patio through a top down builder on the touch screen. Users can then can explore their space by moving around using the touch screen, or putting on an Oculus Rift to see it in Virtual Reality.",
+      "Developed in Unity, this application lets users create a patio through a top down builder on a touch screen television. Users can then can explore their space by moving around using the touch screen, or putting on an Oculus Rift to see it in Virtual Reality.",
     techStack: ["C#", "Unity", "Oculus"],
     github: null,
     demo: null,

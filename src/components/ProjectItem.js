@@ -1,24 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const createMarkup = input => {
-  if (Array.isArray(input)) {
-    let returnString;
-    let count = 0;
-    input.forEach(element => {
-      if (count !== 0) {
-        returnString += ` ${element}`;
-      } else {
-        returnString = `${element}`;
-      }
-      count++;
-    });
-    return { __html: `${returnString}` };
-  } else {
-    return { __html: input };
-  }
-};
-
 const ProjectItem = props => {
   return (
     <div className="project-item">
@@ -30,14 +12,21 @@ const ProjectItem = props => {
         <div className="project-title ">{props.title}</div>
         <div className="project-description">{props.description}</div>
         <div className="project-links-container">
-          <div
-            className="project-links"
-            dangerouslySetInnerHTML={createMarkup(props.demo)}
-          />
-          <div
-            className="project-links"
-            dangerouslySetInnerHTML={createMarkup(props.github)}
-          />
+          {props.demo ? (
+            <div className="project-links">
+              <a href={props.demo} target="_blank">
+                {props.demoText}
+              </a>
+            </div>
+          ) : null}
+
+          {props.github ? (
+            <div className="project-links">
+              <a href={props.github} target="_blank">
+                View Github
+              </a>
+            </div>
+          ) : null}
         </div>
 
         <div className="project-tech-stack">
@@ -61,6 +50,7 @@ ProjectItem.propTypes = {
   techStack: PropTypes.array.isRequired,
   github: PropTypes.string,
   demo: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  demoText: PropTypes.string,
   year: PropTypes.number.isRequired,
   image: PropTypes.string
 };

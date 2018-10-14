@@ -19,6 +19,7 @@ const ProjectContainer = props => {
               techStack={project.techStack}
               github={project.github}
               demo={project.demo}
+              demoText={project.demoText}
               year={project.year}
               image={project.image}
               key={index}

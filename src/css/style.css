@@ -135,14 +135,14 @@
   border-radius: 15px;
   align-self: center;
   width: 200px; }
+  @media (max-width: 860px) {
+    .project-image-container {
+      display: none !important; } }
 
 .project-image {
   width: 200px;
   border-radius: 15px;
   box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5); }
-  @media (max-width: 860px) {
-    .project-image {
-      display: none !important; } }
 
 .spacer {
   height: 0;

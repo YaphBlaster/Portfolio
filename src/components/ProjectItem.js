@@ -12,21 +12,21 @@ const ProjectItem = props => {
         <div className="project-title ">{props.title}</div>
         <div className="project-description">{props.description}</div>
         <div className="project-links-container">
-          {props.demo ? (
+          {props.demo && (
             <div className="project-links">
               <a href={props.demo} target="_blank">
                 {props.demoText}
               </a>
             </div>
-          ) : null}
+          )}
 
-          {props.github ? (
+          {props.github && (
             <div className="project-links">
               <a href={props.github} target="_blank">
                 View Github
               </a>
             </div>
-          ) : null}
+          )}
         </div>
 
         <div className="project-tech-stack">

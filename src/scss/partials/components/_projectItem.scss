@@ -14,17 +14,17 @@
   border-radius: 15px;
   align-self: center;
   width: 200px;
+  @include mq("med") {
+    & {
+      display: none !important;
+    }
+  }
 }
 
 .project-image {
   width: 200px;
   border-radius: 15px;
   box-shadow: 0 1px 13px rgba(0, 0, 0, 0.5);
-  @include mq("med") {
-    & {
-      display: none !important;
-    }
-  }
 }
 
 .spacer {

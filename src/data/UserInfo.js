@@ -103,7 +103,7 @@ const projects = [
       "Developed in ReactJS, this web application is used as a central hub for the prototypes made in Wawanesa's Innovation Lab. The Innovation Lab is heavily focused on creating insurance solutions using the most cutting edge technologies, however, these technologies are backend heavy so the Innovation Dashboard was created to give a face to all the proof of concepts at the lab. As the Lead Developer for this project, I mentored junior developers to learn ReactJS, established version control workflows and  set up the groundwork to expedite tedious tasks such as routing, component building, and hosting/deployment solutions.",
     techStack: ["ReactJS", "Redux", "Sass", "Javascript", "HTML5", "CSS3"],
     github: null,
-    demo: "http://www.wawainnodash.surge.sh",
+    demo: null,
     demoText: "View Website",
     year: 2018,
     image: innovationLab

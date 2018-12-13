@@ -6,12 +6,13 @@ import garageBuilder from "../images/GarageBuilder.jpg";
 import beeline from "../images/Beeline.jpg";
 import portfolio from "../assets/avatar.svg";
 import innovationLab from "../images/InnovationLab.png";
+import wawanesa from "../images/WawanesaLogo.svg";
 
 const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
-const summary = `I am a software engineer in Winnipeg, Manitoba. 
-  I've developed on various platforms ranging from web applications using React and JavaScript to virtual reality using Unity and Unreal Engine. 
+const summary = `I am a developer in Winnipeg, Manitoba. 
+  I've worked on various platforms ranging from web applications using React and JavaScript to virtual reality using Unity and Unreal Engine. 
   I love working on projects that challenge and help me grow to become a better programmer. 
   Thanks for visiting my portfolio and please check out my projects down below!`;
 const emailAddress = "yaphet.abraha@gmail.com";
@@ -67,14 +68,26 @@ const links = about[0].info;
 
 const projects = [
   {
+    title: "Claims Fast Track",
+    description:
+      "Made in ReactJS, Claims Fast Track is an application made to streamline the claims process. Built for adjusters, this application allows them to add customers, claims, estimates and manage the status of a claim. Adjusters can also send a custom URL to a client where they can add images of a damaged asset at the their convenience to be later viewed by the adjuster.",
+    techStack: [
+      "ReactJS",
+      "Redux",
+      "Sass",
+      "Javascript",
+      "HTML5",
+      "CSS3",
+      "AWS"
+    ],
+    year: 2018,
+    image: wawanesa
+  },
+  {
     title: "WowVR",
     description:
       "WOWVR is a fun and creative tool that allows you to design your dream patio with Outdoor living products in a fully 3D environment. With over 100+ high definition products to choose from including BBQs, Seating, Tables, Rugs, Accessories, Umbrellas and Gazebos, you can arrange them into ANY possible way that fits your Outdoor lifestyle. Want to see your design up-close? Using WOWVR’s built-in Virtual Reality engine, you can take a virtual walk through your patio designs in a fully immersive 3D environment. WOWVR also supports Google Cardboard viewers, so you can get a Fully Immersive VR Experience using your mobile device.",
     techStack: ["C#", "Unity", "GoogleVr", "Android", "IOS"],
-    github: null,
-    demo:
-      "https://play.google.com/store/apps/details?id=com.canadiantire.wowvr&hl=en_CA",
-    demoText: "Download for Android",
     year: 2016,
     image: wowVr
   },
@@ -101,10 +114,15 @@ const projects = [
     title: "Wawanesa Innovation Dashboard",
     description:
       "Developed in ReactJS, this web application is used as a central hub for the prototypes made in Wawanesa's Innovation Lab. The Innovation Lab is heavily focused on creating insurance solutions using the most cutting edge technologies, however, these technologies are backend heavy so the Innovation Dashboard was created to give a face to all the proof of concepts at the lab. As the Lead Developer for this project, I mentored junior developers to learn ReactJS, established version control workflows and  set up the groundwork to expedite tedious tasks such as routing, component building, and hosting/deployment solutions.",
-    techStack: ["ReactJS", "Redux", "Sass", "Javascript", "HTML5", "CSS3"],
-    github: null,
-    demo: "http://www.wawainnodash.surge.sh",
-    demoText: "View Website",
+    techStack: [
+      "ReactJS",
+      "Redux",
+      "Sass",
+      "Javascript",
+      "HTML5",
+      "CSS3",
+      "AWS"
+    ],
     year: 2018,
     image: innovationLab
   },
@@ -124,8 +142,6 @@ const projects = [
     description:
       "This app was created to invite members to the 2016 Canadian Sports Hall of Fame induction using Google Cardboard/VR. Upon putting a device in a vr headset, users find themselves in a full auditorium where they would be invited to the sports event via a video playing on a theatre screen",
     techStack: ["C#", "Unity", "GoogleVr"],
-    github: null,
-    demo: null,
     year: 2016,
     image: CSHOF
   },
@@ -134,8 +150,6 @@ const projects = [
     description:
       "Developed in Unity, this app allows a user to create their garage in a controlled first person experience and allows them to move products around. Users can then can explore their space by moving around using a touch screen, or by putting on an Oculus Rift to see their garage in Virtual Reality.",
     techStack: ["C#", "Unity", "Oculus"],
-    github: null,
-    demo: null,
     year: 2015,
     image: garageBuilder
   },
@@ -144,7 +158,6 @@ const projects = [
     description:
       "Developed in React Native, this app allows users to input multiple destinations of interest and will then navigate the user to those destinations via the most efficient route.",
     techStack: ["React Native", "IOS"],
-    github: null,
     demo: "https://itunes.apple.com/us/app/beeline/id1372586745?mt=8",
     demoText: "Download for IOS",
     year: 2018,
@@ -155,8 +168,6 @@ const projects = [
     description:
       "Developed in Unity, this application lets users create a patio through a top down builder on a touch screen television. Users can then can explore their space by moving around using the touch screen, or putting on an Oculus Rift to see it in Virtual Reality.",
     techStack: ["C#", "Unity", "Oculus"],
-    github: null,
-    demo: null,
     year: 2016,
     image: patioBuilder
   }

@@ -29,20 +29,20 @@ const Navbar = () => {
   return (
     <nav className="navbar transition home">
       <a
-        className={usingMobile && "mobile-link"}
+        className={usingMobile ? "mobile-link" : undefined}
         href={data.resumeLink}
         target="_blank"
       >
         Resume
       </a>
       <span
-        className={usingMobile && "mobile-link"}
+        className={usingMobile ? "mobile-link" : undefined}
         onClick={() => scrollTo(".projects")}
       >
         Projects
       </span>
       <a
-        className={usingMobile && "mobile-link"}
+        className={usingMobile ? "mobile-link" : undefined}
         onClick={() => scrollTo(".contact")}
       >
         Contact

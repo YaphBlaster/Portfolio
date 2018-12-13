@@ -20,6 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lt.surge": "react-scripts build && surge --domain yaphet.surge.sh ./build"
+    "lt.surge": "react-scripts build && surge --domain yaphet.surge.sh ./build",
+    "sassy": "sass --watch ./src/scss:./src/css"
   }
 }

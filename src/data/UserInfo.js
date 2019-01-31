@@ -95,7 +95,7 @@ const projects = [
   {
     title: "Hypemoji",
     description:
-      "With ReactJS running the frontend and Amazon Web Services in the backend, this application traverses Snapchat's bitmoji API to create custom bitmoji comics with text input from the user. Users also can copy and paste their bitmoji url into the application and be granted access to all Bitmoji and Friendmoji images to edit and share!",
+      "With ReactJS running the frontend and Amazon Web Services in the backend, this application traverses Snapchat's Bitmoji API to create custom Bitmoji comics with text input from the user. Users also can copy and paste their Bitmoji url into the application and be granted access to all Bitmoji and Friendmoji images to edit and share!",
     techStack: [
       "ReactJS",
       "Redux",

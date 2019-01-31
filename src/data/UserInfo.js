@@ -31,6 +31,9 @@ const skillsList = [
   "HTML5",
   "CSS3",
   "Sass",
+  "AWS API Gateway",
+  "AWS Lambda",
+  "AWS S3",
   "C#",
   "Python",
   "Unity",
@@ -102,9 +105,9 @@ const projects = [
       "Javascript",
       "Styled Components",
       "Python",
-      "Pillow",
       "AWS Lambda",
-      "AWS API Gateway"
+      "AWS API Gateway",
+      "AWS S3"
     ],
     github: [
       "https://github.com/YaphBlaster/hypemoji",

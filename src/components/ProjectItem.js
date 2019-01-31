@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const ProjectItem = props => {
+  console.log(props);
   return (
     <div className="project-item">
       <div className="project-image-container">
@@ -22,9 +23,17 @@ const ProjectItem = props => {
 
           {props.github && (
             <div className="project-links">
-              <a href={props.github} target="_blank">
-                View Github
-              </a>
+              {props.github instanceof Array ? (
+                props.github.map((githubURL, index) => (
+                  <a href={githubURL} target="_blank" key={index}>
+                    {props.gitText ? props.gitText[index] : "View Github"}
+                  </a>
+                ))
+              ) : (
+                <a href={props.github} target="_blank">
+                  View Github
+                </a>
+              )}
             </div>
           )}
         </div>
@@ -48,7 +57,8 @@ ProjectItem.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   techStack: PropTypes.array.isRequired,
-  github: PropTypes.string,
+  github: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  gitText: PropTypes.array,
   demo: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   demoText: PropTypes.string,
   year: PropTypes.number.isRequired,

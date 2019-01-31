@@ -7,12 +7,13 @@ import beeline from "../images/Beeline.jpg";
 import portfolio from "../assets/avatar.svg";
 import innovationLab from "../images/InnovationLab.png";
 import wawanesa from "../images/WawanesaLogo.svg";
+import hypemoji from "../images/HypeMoji.png";
 
 const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 const summary = `I am a developer in Winnipeg, Manitoba. 
-  I've worked on various platforms ranging from web applications using React and JavaScript to virtual reality using Unity and Unreal Engine. 
+  I've worked on various platforms ranging from frontend applications using React and JavaScript to backend services using AWS Lambda and API Gateway to virtual reality using Unity and Unreal Engine. 
   I love working on projects that challenge and help me grow to become a better programmer. 
   Thanks for visiting my portfolio and please check out my projects down below!`;
 const emailAddress = "yaphet.abraha@gmail.com";
@@ -90,6 +91,30 @@ const projects = [
     techStack: ["C#", "Unity", "GoogleVr", "Android", "IOS"],
     year: 2016,
     image: wowVr
+  },
+  {
+    title: "Hypemoji",
+    description:
+      "With ReactJS running the frontend and Amazon Web Services in the backend, this application traverses Snapchat's Bitmoji API to create custom Bitmoji comics with text input from the user. Users also can copy and paste their Bitmoji url into the application and be granted access to all Bitmoji and Friendmoji images to edit and share!",
+    techStack: [
+      "ReactJS",
+      "Redux",
+      "Javascript",
+      "Styled Components",
+      "Python",
+      "Pillow",
+      "AWS Lambda",
+      "AWS API Gateway"
+    ],
+    github: [
+      "https://github.com/YaphBlaster/hypemoji",
+      "https://github.com/YaphBlaster/hypemoji_backend/branches"
+    ],
+    gitText: ["Frontend Github", "Backend Github"],
+    demo: "http://hypemoji.surge.sh/",
+    demoText: "View Website",
+    year: 2019,
+    image: hypemoji
   },
   {
     title: "Portfolio",

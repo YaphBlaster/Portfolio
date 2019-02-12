@@ -20,17 +20,12 @@ const ProjectItem = props => {
               </a>
             )}
 
-            {props.github instanceof Array ? (
+            {props.github instanceof Array &&
               props.github.map((githubURL, index) => (
                 <a href={githubURL} target="_blank" key={index}>
                   {props.gitText ? props.gitText[index] : "View Github"}
                 </a>
-              ))
-            ) : (
-              <a href={props.github} target="_blank">
-                View Github
-              </a>
-            )}
+              ))}
           </div>
         </div>
 

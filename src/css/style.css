@@ -70,12 +70,14 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 400px;
   grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
   font-size: 1.4em;
   margin-top: 20px;
-  margin-bottom: -20px; }
+  margin-bottom: -20px;
+  max-width: 400px; }
+  @media (max-width: 768px) {
+    .navbar {
+      max-width: 320px; } }
   .navbar span,
   .navbar a {
     position: relative;

@@ -3,12 +3,18 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 400px;
+  // width: 400px;
   grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
+  // padding: 20px;
   font-size: 1.4em;
   margin-top: 20px;
   margin-bottom: -20px;
+  max-width: 400px;
+  @include mq("sm") {
+    & {
+      max-width: 320px;
+    }
+  }
 
   span,
   a {

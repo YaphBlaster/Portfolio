@@ -13,29 +13,25 @@ const ProjectItem = props => {
         <div className="project-title ">{props.title}</div>
         <div className="project-description">{props.description}</div>
         <div className="project-links-container">
-          {props.demo && (
-            <div className="project-links">
+          <div className="project-links">
+            {props.demo && (
               <a href={props.demo} target="_blank">
                 {props.demoText}
               </a>
-            </div>
-          )}
+            )}
 
-          {props.github && (
-            <div className="project-links">
-              {props.github instanceof Array ? (
-                props.github.map((githubURL, index) => (
-                  <a href={githubURL} target="_blank" key={index}>
-                    {props.gitText ? props.gitText[index] : "View Github"}
-                  </a>
-                ))
-              ) : (
-                <a href={props.github} target="_blank">
-                  View Github
+            {props.github instanceof Array ? (
+              props.github.map((githubURL, index) => (
+                <a href={githubURL} target="_blank" key={index}>
+                  {props.gitText ? props.gitText[index] : "View Github"}
                 </a>
-              )}
-            </div>
-          )}
+              ))
+            ) : (
+              <a href={props.github} target="_blank">
+                View Github
+              </a>
+            )}
+          </div>
         </div>
 
         <div className="project-tech-stack">

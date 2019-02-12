@@ -44,6 +44,13 @@
   color: white;
   display: flex;
   margin-top: 30px;
+
+  @include mq("sm") {
+    & {
+      flex-direction: column;
+    }
+  }
+
   a {
     margin: 5px;
     transition: all 0.5s ease;

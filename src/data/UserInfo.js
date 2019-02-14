@@ -31,6 +31,7 @@ const skillsList = [
   "HTML5",
   "CSS3",
   "Sass",
+  "Serverless",
   "AWS API Gateway",
   "AWS Lambda",
   "AWS S3",
@@ -98,20 +99,19 @@ const projects = [
   {
     title: "Hypemoji",
     description:
-      "With ReactJS running the frontend and Amazon Web Services in the backend, this application traverses Snapchat's Bitmoji API to create custom Bitmoji comics with text input from the user. Users also can copy and paste their Bitmoji url into the application and be granted access to all Bitmoji and Friendmoji images to edit and share!",
+      "With ReactJS running the frontend and Serverless + Amazon Web Services in the backend, this application traverses Snapchat's Bitmoji API to create custom Bitmoji comics with text input from the user. Users also can copy and paste their Bitmoji url into the application and be granted access to all Bitmoji and Friendmoji images to edit and share!",
     techStack: [
       "ReactJS",
       "Redux",
       "Javascript",
       "Styled Components",
       "Python",
-      "AWS Lambda",
-      "AWS API Gateway",
-      "AWS S3"
+      "Serverless",
+      "AWS Lambda"
     ],
     github: [
       "https://github.com/YaphBlaster/hypemoji",
-      "https://github.com/YaphBlaster/hypemoji_backend/branches"
+      "https://github.com/YaphBlaster/hypemoji_sls"
     ],
     gitText: ["Frontend Github", "Backend Github"],
     demo: "http://hypemoji.surge.sh/",

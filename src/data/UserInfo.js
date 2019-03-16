@@ -3,7 +3,6 @@ import wowVr from "../images/WowVr.jpg";
 import CSHOF from "../images/CSHOF.jpg";
 import patioBuilder from "../images/PatioBuilder.jpg";
 import garageBuilder from "../images/GarageBuilder.jpg";
-import beeline from "../images/Beeline.jpg";
 import portfolio from "../assets/avatar.svg";
 import innovationLab from "../images/InnovationLab.png";
 import wawanesa from "../images/WawanesaLogo.svg";

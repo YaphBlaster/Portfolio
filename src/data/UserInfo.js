@@ -3,7 +3,6 @@ import wowVr from "../images/WowVr.jpg";
 import CSHOF from "../images/CSHOF.jpg";
 import patioBuilder from "../images/PatioBuilder.jpg";
 import garageBuilder from "../images/GarageBuilder.jpg";
-import beeline from "../images/Beeline.jpg";
 import portfolio from "../assets/avatar.svg";
 import innovationLab from "../images/InnovationLab.png";
 import wawanesa from "../images/WawanesaLogo.svg";
@@ -180,16 +179,6 @@ const projects = [
     techStack: ["C#", "Unity", "Oculus"],
     year: 2015,
     image: garageBuilder
-  },
-  {
-    title: "Beeline",
-    description:
-      "Developed in React Native, this app allows users to input multiple destinations of interest and will then navigate the user to those destinations via the most efficient route.",
-    techStack: ["React Native", "IOS"],
-    demo: "https://itunes.apple.com/us/app/beeline/id1372586745?mt=8",
-    demoText: "Download for IOS",
-    year: 2018,
-    image: beeline
   },
   {
     title: "Canada’s Dream Patio Builder",

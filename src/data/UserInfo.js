@@ -182,16 +182,6 @@ const projects = [
     image: garageBuilder
   },
   {
-    title: "Beeline",
-    description:
-      "Developed in React Native, this app allows users to input multiple destinations of interest and will then navigate the user to those destinations via the most efficient route.",
-    techStack: ["React Native", "IOS"],
-    demo: "https://itunes.apple.com/us/app/beeline/id1372586745?mt=8",
-    demoText: "Download for IOS",
-    year: 2018,
-    image: beeline
-  },
-  {
     title: "Canada’s Dream Patio Builder",
     description:
       "Developed in Unity, this application lets users create a patio through a top down builder on a touch screen television. Users can then can explore their space by moving around using the touch screen, or putting on an Oculus Rift to see it in Virtual Reality.",

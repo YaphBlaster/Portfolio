@@ -18,7 +18,7 @@ const summary = `I am a developer in Winnipeg, Manitoba.
   I love working on projects that challenge and help me grow to become a better programmer. 
   Thanks for visiting my portfolio and please check out my projects down below!`;
 const emailAddress = "yaphet.abraha@gmail.com";
-const linkedIn = "https://www.linkedin.com/in/yaphet-abraha-95193490";
+const linkedIn = "https://www.linkedin.com/in/yaphet-abraha";
 const github = "https://github.com/YaphBlaster";
 const skillsList = [
   "ReactJS",

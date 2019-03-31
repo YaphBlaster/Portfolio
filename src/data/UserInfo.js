@@ -7,6 +7,8 @@ import portfolio from "../assets/avatar.svg";
 import innovationLab from "../images/InnovationLab.png";
 import wawanesa from "../images/WawanesaLogo.svg";
 import hypemoji from "../images/HypeMoji.png";
+import arHouse from "../images/ARHouse.png";
+import peggoARImage from "../images/PeggoARImage.jpg";
 
 const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
@@ -71,6 +73,21 @@ const about = [
 const links = about[0].info;
 
 const projects = [
+  {
+    title: "Wawanesa Augmented Reality House",
+    description:
+      "Built in Unity3D, this application is made to engage users, help with customer retention and act as a self promoting marketing tool. The proposed use case is that brokers can give a customer a business card with a custom logo on the back and a QR code on the front that would allow the user to download a companion application. When the user runs the application and points their camera at the business card, a virtual house will appear in augmented reality. Users can then explore the house by pinching to zoom, rotating the house with a slider, and physically moving their device to view the house from different angles. Users can also tap on glowing items, giving the user more information about the different insurance options Wawanesa offers. As the sole developer of this application, I was responsible for the all animation, game design, and logic.",
+    techStack: ["Unity", "Mecanim", "C#", "Vuforia"],
+    year: 2019,
+    image: arHouse,
+    github: [
+      "https://s3-us-west-2.amazonaws.com/yaphet-uploaded-files/Wawanesa_AR_House.apk",
+      peggoARImage
+    ],
+    gitText: ["Download Android APK", "AR Target"],
+    demo: "https://www.youtube.com/watch?v=E9lGHy3dBO0",
+    demoText: "Watch Demo Video"
+  },
   {
     title: "Claims Fast Track",
     description:

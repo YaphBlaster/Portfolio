@@ -120,7 +120,8 @@
 
 .project-container {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 10px; }
 
 /* ProjectItem Component */
 .project-item {
@@ -129,13 +130,15 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
   border-radius: 15px;
-  border-bottom: 3px solid cornflowerblue; }
+  border-bottom: 3px solid cornflowerblue;
+  padding-bottom: 20px; }
 
 .project-image-container {
   margin-left: 20px;
   border-radius: 15px;
-  align-self: center;
-  width: 200px; }
+  align-self: flex-start;
+  width: 200px;
+  margin-top: 72px; }
   @media (max-width: 860px) {
     .project-image-container {
       display: none !important; } }

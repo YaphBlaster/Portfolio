@@ -9,12 +9,13 @@ import wawanesa from "../images/WawanesaLogo.svg";
 import hypemoji from "../images/HypeMoji.png";
 import arHouse from "../images/ARHouse.png";
 import peggoARImage from "../images/PeggoARImage.jpg";
+import ReactCrashCourse from "../images/ReactLogo.png";
 
 const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 const summary = `I am a developer in Winnipeg, Manitoba. 
-  I've worked on various platforms ranging from frontend applications using React and JavaScript to backend services using Serverless and AWS Lambda to virtual reality using Unity and Unreal Engine. 
+  I've worked on various technologies ranging from frontend applications using React and JavaScript to backend services using Serverless and AWS Lambda to virtual reality using Unity and Unreal Engine. 
   I love working on projects that challenge and help me grow to become a better programmer. 
   Thanks for visiting my portfolio and please check out my projects down below!`;
 const emailAddress = "yaphet.abraha@gmail.com";
@@ -22,13 +23,8 @@ const linkedIn = "https://www.linkedin.com/in/yaphet-abraha";
 const github = "https://github.com/YaphBlaster";
 const skillsList = [
   "ReactJS",
-  "React Native",
   "Redux",
   "JavaScript",
-  "Enzyme",
-  "Mocha",
-  "Chai",
-  "Jest",
   "HTML5",
   "CSS3",
   "Sass",
@@ -41,9 +37,7 @@ const skillsList = [
   "Unity",
   "Unreal Engine",
   "Oculus",
-  "HTC Vive",
-  "Android",
-  "IOS"
+  "HTC Vive"
 ];
 const education = "B.Sc. Computer Science - University of Winnipeg";
 
@@ -73,6 +67,18 @@ const about = [
 const links = about[0].info;
 
 const projects = [
+  {
+    title: "React Crash Course",
+    description:
+      "Made with ReactJS, this application was initially made to onboard front end developers at Wawanesa that would work on React projects, but was later expanded to the public in order to give anyone a quick crash course for React. Developers can go through a small tutorial where the basics of React are explained with practical examples with code breakdowns and screenshots to easily follow along.",
+    techStack: ["ReactJS", "JavaScript", "Styled Components"],
+    year: 2019,
+    image: ReactCrashCourse,
+    github: ["https://github.com/YaphBlaster/react-crash-course"],
+    gitText: ["View Github"],
+    demo: "http://reactcrashcourse.surge.sh/",
+    demoText: "View Website"
+  },
   {
     title: "Wawanesa Augmented Reality House",
     description:
@@ -182,7 +188,7 @@ const projects = [
     image: prequelMemes
   },
   {
-    title: "Canadian Sports Hall of Fame Induction Vr Invitation",
+    title: "Hall of Fame VR Invitation",
     description:
       "This app was created to invite members to the 2016 Canadian Sports Hall of Fame induction using Google Cardboard/VR. Upon putting a device in a vr headset, users find themselves in a full auditorium where they would be invited to the sports event via a video playing on a theatre screen",
     techStack: ["C#", "Unity", "GoogleVr"],

@@ -15,7 +15,7 @@ const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 const summary = `I am a developer in Winnipeg, Manitoba. 
-  I've worked on various technologies ranging from frontend applications using React and JavaScript to backend services using Serverless and AWS Lambda to virtual reality using Unity and Unreal Engine. 
+  I've worked with various technologies ranging from frontend applications using React and JavaScript to backend services using Serverless and AWS Lambda to virtual reality using Unity and Unreal Engine. 
   I love working on projects that challenge and help me grow to become a better programmer. 
   Thanks for visiting my portfolio and please check out my projects down below!`;
 const emailAddress = "yaphet.abraha@gmail.com";

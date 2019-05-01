@@ -11,7 +11,6 @@
     "react": "^16.2.0",
     "react-anime": "^2.1.0",
     "react-dom": "^16.2.0",
-    "react-https-redirect": "^1.1.0",
     "react-scripts": "^1.1.5",
     "sinon": "^6.1.5",
     "vanilla-back-to-top": "^7.1.14"

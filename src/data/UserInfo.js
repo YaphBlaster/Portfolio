@@ -10,8 +10,8 @@ import hypemoji from "../images/HypeMoji.png";
 import arHouse from "../images/ARHouse.png";
 import peggoARImage from "../images/PeggoARImage.jpg";
 import ReactCrashCourse from "../images/ReactLogo.png";
+import resumeLink from "../resume.pdf";
 
-const resumeLink = "./resume.pdf";
 const firstName = "Yaphet";
 const lastName = "Abraha";
 const summary = `I am a developer in Winnipeg, Manitoba. 
